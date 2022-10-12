@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* knapp-parent för flexbox */
+button {
+    display: flex;
+}
+
+/* Ta bort knapp */
+.removeBtn {
+    width: 8rem;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 1.2rem;
+    padding-left: 1.2rem;
+    background-color: #e54f4f;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;   
+    font-size: 17px;
+}
+
+
+/* Lägg till i kungvagnen knapp */
+.addToBasketBtn {
+    width: 13rem;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 1.2rem;
+    padding-left: 1.2rem;
+    background-color: #5596f4;
+    color: #ffffff;
+    border: none;
+    border-radius: 7px;   
+    font-size: 15px;
+}
