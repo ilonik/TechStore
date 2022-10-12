@@ -42,6 +42,7 @@ button {
     font-size: 15px;
 }
 
+/*slutför ditt köp knapp*/
 .completeYourPurchaseBtn {
     width: 10rem;
     flex-wrap: nowrap;
