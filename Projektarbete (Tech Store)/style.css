@@ -41,3 +41,18 @@ button {
     border-radius: 7px;   
     font-size: 15px;
 }
+
+.completeYourPurchaseBtn {
+    width: 10rem;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 1.2rem;
+    padding-left: 1.2rem;
+    background-color: #5596f4;
+    color: #ffffff;
+    border: none;
+    border-radius: 7px;   
+    font-size: 15px;
+}
