@@ -4,31 +4,28 @@
 }
 
 a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
-
+    font-weight: bolder;
+    /*links color and hide underline*/
 }
 
 .header {
-    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    background-color: #212121;
     width: 100%;
-    height: 70px;
+    height: 80px;
     position: fixed;
-
-
+    border: 3px solid #212121;
 }
 
 .headertitle {
-    text-align: left;
-    color: rgb(255, 255, 255);
-    margin-top: 20px;
-    margin-left: 10px;
-    font-weight: bold;
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .shoppingcart {
-    text-align: right;
     color: rgb(146, 15, 15);
-    margin-right: 10px;
-    font-size: 40px;
+    padding: 30px;
 }
