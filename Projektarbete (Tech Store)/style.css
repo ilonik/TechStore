@@ -1,6 +1,67 @@
 * {
     margin: 0;
     padding: 0;
+    buttonsBranch
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* knapp-parent för flexbox */
+button {
+    display: flex;
+}
+
+/* Ta bort knapp */
+.removeBtn {
+    align-items: center;
+    width: 8.2rem;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    background-color: #e54f4f;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;   
+    font-size: 17px;
+}
+
+
+/* Lägg till i kungvagnen knapp */
+.addToBasketBtn {
+    align-items: center;
+    width: 15rem;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 1.2rem;
+    padding-left: 1.2rem;
+    background-color: #5596f4;
+    color: #ffffff;
+    border: none;
+    border-radius: 7px;   
+    font-size: 15px;
+}
+
+/*slutför ditt köp knapp*/
+.completeYourPurchaseBtn {
+    align-items: center;
+    width: 11rem;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 1.2rem;
+    padding-left: 1.2rem;
+    background-color: #5596f4;
+    color: #ffffff;
+    border: none;
+    border-radius: 7px;   
+    font-size: 15px;
+    text-align: center;
 }
 
 a {
