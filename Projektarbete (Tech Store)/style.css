@@ -2,6 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    
+
 }
 
 /* knapp-parent för flexbox */
@@ -11,6 +17,7 @@ button {
 
 /* Ta bort knapp */
 .removeBtn {
+    align-items: center;
     width: 8.2rem;
     flex-wrap: nowrap;
     justify-content: space-around;
@@ -28,7 +35,8 @@ button {
 
 /* Lägg till i kungvagnen knapp */
 .addToBasketBtn {
-    width: 13rem;
+    align-items: center;
+    width: 15rem;
     flex-wrap: nowrap;
     justify-content: space-between;
     padding-top: 0.5rem;
@@ -44,7 +52,8 @@ button {
 
 /*slutför ditt köp knapp*/
 .completeYourPurchaseBtn {
-    width: 10rem;
+    align-items: center;
+    width: 11rem;
     flex-wrap: nowrap;
     justify-content: space-between;
     padding-top: 0.5rem;
@@ -56,4 +65,5 @@ button {
     border: none;
     border-radius: 7px;   
     font-size: 15px;
+    text-align: center;
 }
