@@ -6,13 +6,11 @@
 }
 
 /* knapp-parent för flexbox */
-
 button {
     display: flex;
 }
 
 /* Ta bort knapp */
-
 .removeBtn {
     align-items: center;
     width: 8.2rem;
@@ -30,7 +28,6 @@ button {
 }
 
 /* Lägg till i kungvagnen knapp */
-
 .addToBasketBtn {
     align-items: center;
     width: 15rem;
@@ -67,7 +64,7 @@ button {
 }
 
 
-/*links color and hide underline*/
+/*links color and hide underline in header*/
 a {
     color: #ffffff;
     text-decoration: none;
@@ -75,7 +72,7 @@ a {
 }
 
 
-/*Storlek på header och mått*/
+/*header size & color*/
 .header {
     display: flex;
     justify-content: space-between;
@@ -86,22 +83,21 @@ a {
     border: 3px solid #212121;
 }
 
-/*title och länk*/
+/*title & links*/
 .headertitle {
     padding: 15px;
     font-family: "Poppins", sans-serif;
 }
 
-/*Loggan och länken*/
+/*shopping cart & link*/
 .shoppingcart {
-    color: rgb(146, 15, 15);
+    color: #ffffff;
     padding: 30px;
 }
 
 
 
 /***********ProductDisplay***************/
-
 body {
     min-height: 100vh;
     font-family: poppins;
