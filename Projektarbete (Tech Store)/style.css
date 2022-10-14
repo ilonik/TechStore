@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    buttonsBranch
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
@@ -24,7 +23,7 @@ button {
     background-color: #e54f4f;
     color: #ffffff;
     border: none;
-    border-radius: 12px;   
+    border-radius: 12px;
     font-size: 17px;
 }
 
@@ -42,7 +41,7 @@ button {
     background-color: #5596f4;
     color: #ffffff;
     border: none;
-    border-radius: 7px;   
+    border-radius: 7px;
     font-size: 15px;
 }
 
@@ -59,18 +58,19 @@ button {
     background-color: #5596f4;
     color: #ffffff;
     border: none;
-    border-radius: 7px;   
+    border-radius: 7px;
     font-size: 15px;
     text-align: center;
 }
 
+/*för att göra länken vit och utan underline*/
 a {
     color: #ffffff;
     text-decoration: none;
     font-weight: bolder;
-    /*links color and hide underline*/
 }
 
+/*Storlek på header och mått*/
 .header {
     display: flex;
     justify-content: space-between;
@@ -81,11 +81,13 @@ a {
     border: 3px solid #212121;
 }
 
+/*title och länk*/
 .headertitle {
     padding: 15px;
     font-family: 'Poppins', sans-serif;
 }
 
+/*Loggan och länken*/
 .shoppingcart {
     color: rgb(146, 15, 15);
     padding: 30px;
