@@ -1,0 +1,62 @@
+/***********ProductDisplay***************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: poppins;
+}
+
+.products {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+.products p {
+  text-align: center;
+  font-weight: lighter;
+}
+
+.products span {
+  font-weight: bolder;
+}
+
+.products h1 {
+  font-weight: bolder;
+}
+
+.products img {
+  width: 55%;
+  align-items: center;
+}
+
+.products h1,
+p span {
+  padding: 5px;
+}
+
+.products:nth-child(2) img {
+  width: 80%;
+}
+
+.products:nth-child(odd) {
+  background-color: #fff;
+}
+
+.products button {
+  /*knappDesign*/
+}
+
+.fa-cart-plus:before {
+  padding-right: 5px;
+}
+
+/***********ProductDisplayEnd***************/
