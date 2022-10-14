@@ -81,18 +81,22 @@ a {
     height: 70px;
     position: fixed;
     border: 3px solid #212121;
+
 }
 
 /*title & links*/
 .headertitle {
-    padding: 15px;
+    color: #5596f4;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 9px;
     font-family: "Poppins", sans-serif;
 }
 
 /*shopping cart & link*/
 .shoppingcart {
     color: #ffffff;
-    padding: 30px;
+    padding: 20px;
 }
 
 
