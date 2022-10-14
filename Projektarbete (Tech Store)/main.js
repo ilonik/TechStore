@@ -35,7 +35,7 @@ function addProductsToWebpage() {
     })
     
 
-
+    
 
     // Add your code here, remember to brake your code in to smaller function blocks
     // to reduce complexity and increase readability. Each function should have
