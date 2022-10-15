@@ -1,15 +1,16 @@
-@media only screen and (max-width: 480px) {
-  /* .products p {
+/*****Tablet*****/
+@media (min-width: 481px) and (max-width: 767px) {
+  .products p {
     text-align: center;
     font-weight: bolder;
-    font-size: 12px;
+    font-size: 15px;
     padding: 10px;
   }
 
   .products span {
     font-weight: bolder;
     padding-bottom: 10px;
-    font-size: 13px;
+    font-size: 20px;
   }
 
   .products h1 {
@@ -17,17 +18,55 @@
   }
 
   .products img {
-    width: 40%;
+    width: 25%;
     align-items: center;
   }
 
   .products:nth-child(2) img {
-    width: 70%;
+    width: 55%;
+  }
+}
+
+@media (min-width: 765px) and (max-width: 1024px) {
+  .products p {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 15px;
+    padding: 10px;
   }
 
-  .products:nth-child(odd) {
-    background-color: #f5f5f5;
-  } */
+  .products span {
+    font-weight: bolder;
+    padding-bottom: 10px;
+    font-size: 20px;
+  }
+
+  .products h1 {
+    font-weight: bolder;
+  }
+
+  .products img {
+    width: 25%;
+    align-items: center;
+  }
+
+  .products:nth-child(2) img {
+    width: 55%;
+  }
+}
+/****TabletEnd*****/
+
+/******DeskTop***********/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .products img {
+    width: 15%;
+    align-items: center;
+  }
+
+  .products:nth-child(2) img {
+    width: 25%;
+  }
 }
 
 @media only screen and (min-width: 1281px) {
@@ -40,3 +79,4 @@
     width: 25%;
   }
 }
+/******DeskTopEnd***********/
