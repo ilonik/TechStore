@@ -1,0 +1,42 @@
+@media only screen and (max-width: 480px) {
+  /* .products p {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .products span {
+    font-weight: bolder;
+    padding-bottom: 10px;
+    font-size: 13px;
+  }
+
+  .products h1 {
+    font-weight: bolder;
+  }
+
+  .products img {
+    width: 40%;
+    align-items: center;
+  }
+
+  .products:nth-child(2) img {
+    width: 70%;
+  }
+
+  .products:nth-child(odd) {
+    background-color: #f5f5f5;
+  } */
+}
+
+@media only screen and (min-width: 1281px) {
+  .products img {
+    width: 15%;
+    align-items: center;
+  }
+
+  .products:nth-child(2) img {
+    width: 25%;
+  }
+}

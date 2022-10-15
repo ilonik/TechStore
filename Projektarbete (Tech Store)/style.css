@@ -47,7 +47,6 @@ button {
   font-size: 15px;
 }
 
-
 /*slutför ditt köp knapp*/
 .completeYourPurchaseBtn {
   align-items: center;
@@ -66,14 +65,12 @@ button {
   text-align: center;
 }
 
-
 /*links color and hide underline*/
 a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bolder;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bolder;
 }
-
 
 /*Storlek på header och mått*/
 .header {
@@ -98,8 +95,6 @@ a {
   padding: 30px;
 }
 
-
-
 /***********ProductDisplay***************/
 
 body {
@@ -113,16 +108,19 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #f5f5f5;
 }
 
 .products p {
   text-align: center;
-  font-weight: lighter;
+  font-weight: bolder;
+  font-size: 12px;
+  padding: 10px;
 }
 
 .products span {
   font-weight: bolder;
+  padding-bottom: 10px;
+  font-size: 13px;
 }
 
 .products h1 {
@@ -130,29 +128,15 @@ body {
 }
 
 .products img {
-  width: 55%;
+  width: 40%;
   align-items: center;
 }
 
-.products h1,
-p span {
-  padding: 5px;
-}
-
 .products:nth-child(2) img {
-  width: 80%;
+  width: 70%;
 }
-
 .products:nth-child(odd) {
-  background-color: #fff;
-}
-
-.products button {
-  /*knappDesign*/
-}
-
-.fa-cart-plus:before {
-  padding-right: 5px;
+  background-color: #f5f5f5;
 }
 
 /***********ProductDisplayEnd***************/

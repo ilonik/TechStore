@@ -19,24 +19,25 @@ function initSite() {
 
 /** Uses the loaded products data to create a visible product list on the website */
 function addProductsToWebpage() {
-  const placeholder = document.querySelector("#product-output"); // hämtar min main från html filen
-  let output = ""; //skapar en let för att jag skall kunna ändra på den senare, döper den till output för att den ska displayas på html, jag vänjer har en tom i nulägger.
+  const placeholder = document.querySelector("#product-output");
+  let output = "";
   for (let product of listOfProducts) {
-    //skapar en for of lop för att jag vill loopa igenom min array som finns på jSonfilen.
     output += `    
             <div class="products">
                <h1>${product.title}</h1>
                <p>${product.description}</p>
                <img><img src='assets/${product.image}'</img></img>
                <span>${product.price} kr </span>
-               <button><i class="fa-solid fa-cart-plus"></i>  Lägg till i kundvagnen </button>
+               <div class="addToBasket">
+               <button class="addToBasketBtn"><i class="fa-solid fa-cart-arrow-down"></i>Lägg till i kundvagnen </button>
+               </div>
             </div>
          `;
   }
 
   placeholder.innerHTML = output;
   // Check your console to see that the products are stored in the listOfProducts varible.
-  console.log(listOfProducts);
+  console.log(placeholder);
 
   //POP-UP VID GENOMFÖRT KÖP. SKA VARA PÅ KUNDVAGNSSIDAN
   const completeYouPurchase = document.querySelector(".completeYouPurchase");
