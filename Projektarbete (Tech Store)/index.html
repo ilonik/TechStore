@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-
 <html>
-  <head>
-    <title>TechStore</title>
+
+<head>
+    <title>Tech Store</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,7 +13,7 @@
     <!--link to shopping cart logo-->
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <!--Link to fonts-->
-    <script src="./main.js"></script>
+    <script src="./main.js" defer></script>
     <!--Link to main.js-->
 </head>
 
@@ -39,21 +39,37 @@
 
 
     <header class="header">
-      <div class="headertitle">
-        <h1><a href="index.html">TechStore</a></h1>
-        <!--link to the start site-->
-      </div>
+        <div>
+            <h1 class="headertitle"><a href="index.html">TechStore</a></h1>
+            <!--link to the start site-->
+        </div>
 
-      <div class="shoppingcart">
-        <a href="Kundvagnsida.html"
-          ><i class="fa-solid fa-cart-shopping"></i
-        ></a>
-        <!--link to the shopping cart site-->
-      </div>
+        <div class="shoppingcart">
+            <a href="Kundvagnsida.html"><i class="fa-solid fa-cart-shopping fa-2x"></i></a>
+            <!--link to the shopping cart site-->
+        </div>
+        <!--Här under ska det räknas produkter som läggs 
+        <div class="addtocart">
+            <h2>5</h2>
+            <a class="addcart" href="#">addcart</a>
+        </div>-->
+
+
+
     </header>
 
+
+
     <main id="product-output">
-      <!-- Add the content of your site here via javascript -->
+        <!-- Add the content of your site here via javascript -->
     </main>
-  </body>
+    <!--
+    <script src="./addtocart.js"></script>
+    Länk till kundvagn js
+    <script src="./products.json"></script>
+    länk till produkter-->
+
+
+</body>
+
 </html>
