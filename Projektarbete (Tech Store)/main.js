@@ -26,7 +26,7 @@ function addProductsToWebpage() {
             <div class="products">
                <h1>${product.title}</h1>
                <p>${product.description}</p>
-               <img><img src='assets/${product.image}'</img></img>
+               <img src='assets/${product.image}'</img>
                <span>${product.price} kr </span>
                <div class="addToBasket">
                <button class="addToBasketBtn"><i class="fa-solid fa-cart-arrow-down"></i>Lägg till i kundvagnen </button>
