@@ -29,15 +29,16 @@ function addProductsToWebpage() {
                <p>${product.description}</p>
                <img><img src='assets/${product.image}'</img></img>
                <span>${product.price} kr </span>
-               <button><i class="fa-solid fa-cart-plus"></i>  Lägg till i kundvagnen </button>
+               <button class="test"><i class="fa-solid fa-cart-plus"></i>  Lägg till i kundvagnen </button>
             </div>
          `;
   }
 
-  placeholder.innerHTML = output;
-  // Check your console to see that the products are stored in the listOfProducts varible.
-  console.log(listOfProducts);
 
+  placeholder.innerHTML = output;   
+  // Check your console to see that the products are stored in the listOfProducts varible.
+  //console.log(listOfProducts);
+}
   //POP-UP VID GENOMFÖRT KÖP. SKA VARA PÅ KUNDVAGNSSIDAN OOOOOBS DENNA ÄR BORTKOMMENDERAD TILLFÄLLIGT FÖR ATT SLIPPA FELMEDDELANDE!!!!!!!!!!!!!!!
 //   const completeYouPurchase = document.querySelector(".completeYouPurchase");
 
@@ -51,12 +52,9 @@ function addProductsToWebpage() {
 
 
 
-
-
-
   // Add your code here, remember to brake your code in to smaller function blocks
   // to reduce complexity and increase readability. Each function should have
   // an explainetory comment like the one for this function, see row 22.
 
   // TODO: Remove the console.log and these comments when you've read them.
-}
+

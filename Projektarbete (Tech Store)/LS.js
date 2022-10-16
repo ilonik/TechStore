@@ -2,18 +2,23 @@
  const addToCart = document.querySelector(".addToBasketBtn")
 
 
+ let cart = {};
+ if (localStorage.getItem("cart")){
+    cart = JSON.parse(localStorage.getItem("cart"))
+ }
 
- addToCart.addEventListener("click", function () {
+
+/*  addToCart.addEventListener("click", function () {
      //hämtar hem LS
-     const listFromStorage = JSON.parse(localStorage.getItem("shoppingCartList"))
+     const listFromStorage = JSON.parse(localStorage.getItem("cart"))
      //lägger till i LS
-     listFromStorage.push
+     listFromStorage.push('qweqe')
      //Skickar in tillbaka i LS
-     localStorage.setItem("shoppingCartList", JSON.stringify(listFromStorage))
+     localStorage.setItem("cart", JSON.stringify(listFromStorage))
+    
+ }) */
 
- })
-
-
+// bheöver något sådant här typ (let i = 0; i < btns.length; i++) {
 
 
  const myArray = [
@@ -38,6 +43,7 @@
          "image": "LGV30.png",
          "price": 7495
      }
+     
  ]
 
 
