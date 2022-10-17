@@ -68,6 +68,10 @@ a {
   font-weight: bolder;
 }
 
+.headertitle h1 {
+  font-weight: 345;
+}
+
 /*header size & color*/
 .header {
   display: flex;
@@ -120,8 +124,6 @@ body {
   padding-bottom: 10px;
 
   font-size: 13px;
-
-
 }
 
 .products p {
@@ -129,11 +131,9 @@ body {
   font-weight: lighter;
 }
 
-
 .products span {
   font-weight: bolder;
 }
-
 
 .products h1 {
   font-weight: bolder;
