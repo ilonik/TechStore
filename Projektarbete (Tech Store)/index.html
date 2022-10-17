@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
 
-<head>
-    <title>Tech Store</title>
+<html>
+  <head>
+    <title>TechStore</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -21,12 +21,14 @@
     <!--Link to fonts-->
     <script src="./main.js" defer></script>
     <!--Link to main.js-->
-    <link rel="stylesheet" href="Responsiv.css" />
-    <!--link to ResponsikCss-->
-  </head>
+    <script src="./LS.js" defer></script>
+</head>
 
-  <body onload="initSite()">
-    <!-- knappar
+
+
+<body onload="initSite()">
+
+    <!-- knappar-->
     <div class="removeBtnContainer">
         <button class="removeBtn"><i class="fa-regular fa-trash-can"></i>Ta bort </button>
     </div>
@@ -37,43 +39,28 @@
     <br>
     <div class="completeYouPurchase">
         <button class="completeYourPurchaseBtn"><i class="fa-solid fa-check"></i>Slutför ditt köp</button>
-    </div>-->
+    </div>
 
     <header class="header">
-        <div>
-            <h1 class="headertitle"><a href="index.html">TechStore</a></h1>
-            <!--link to the start site-->
-        </div>
+      <div class="headertitle">
+        <h1><a href="index.html">TechStore</a></h1>
+        <!--link to the start site-->
+      </div>
 
-        <div class="shoppingcart">
-            <a href="Kundvagnsida.html"><i class="fa-solid fa-cart-shopping fa-2x"></i></a>
-            <!--link to the shopping cart site-->
-        </div>
-        <!--Här under ska det räknas produkter som läggs 
-        <div class="addtocart">
-            <h2>5</h2>
-            <a class="addcart" href="#">addcart</a>
-        </div>-->
-
-
-
+      <div class="shoppingcart">
+        <a href="Kundvagnsida.html"
+          ><i class="fa-solid fa-cart-shopping"></i
+        ></a>
+        <!--link to the shopping cart site-->
+      </div>
     </header>
 
-
-
     <main id="product-output">
+
 
       <!-- Add the content of your site here via javascript -->
       <!--TEst-->
 
     </main>
-    <!--
-    <script src="./addtocart.js"></script>
-    Länk till kundvagn js
-    <script src="./products.json"></script>
-    länk till produkter-->
-
-
-</body>
-
+  </body>
 </html>

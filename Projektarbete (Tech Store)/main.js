@@ -35,20 +35,27 @@ function addProductsToWebpage() {
          `;
   }
 
-  placeholder.innerHTML = output;
+
+  placeholder.innerHTML = output;   
   // Check your console to see that the products are stored in the listOfProducts varible.
-  console.log(placeholder);
+  //console.log(listOfProducts);
+}
+  //POP-UP VID GENOMFÖRT KÖP. SKA VARA PÅ KUNDVAGNSSIDAN OOOOOBS DENNA ÄR BORTKOMMENDERAD TILLFÄLLIGT FÖR ATT SLIPPA FELMEDDELANDE!!!!!!!!!!!!!!!
+//   const completeYouPurchase = document.querySelector(".completeYouPurchase");
 
-  //POP-UP VID GENOMFÖRT KÖP. SKA VARA PÅ KUNDVAGNSSIDAN
-  const completeYouPurchase = document.querySelector(".completeYouPurchase");
+//   completeYouPurchase.addEventListener("click", function () {
+//     alert("Ditt köp är genomfört!");
+//   });
 
-  completeYouPurchase.addEventListener("click", function () {
-    alert("Ditt köp är genomfört!");
-  });
+
+
+
+
+
 
   // Add your code here, remember to brake your code in to smaller function blocks
   // to reduce complexity and increase readability. Each function should have
   // an explainetory comment like the one for this function, see row 22.
 
   // TODO: Remove the console.log and these comments when you've read them.
-}
+

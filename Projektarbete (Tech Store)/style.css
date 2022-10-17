@@ -118,7 +118,10 @@ body {
 .products span {
   font-weight: bolder;
   padding-bottom: 10px;
+
   font-size: 13px;
+
+
 }
 
 .products p {
@@ -126,9 +129,11 @@ body {
   font-weight: lighter;
 }
 
+
 .products span {
   font-weight: bolder;
 }
+
 
 .products h1 {
   font-weight: bolder;
