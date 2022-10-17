@@ -44,32 +44,35 @@ button {
     font-size: 15px;
 }
 
-
 /*slutför ditt köp knapp*/
 .completeYourPurchaseBtn {
-    align-items: center;
-    width: 11rem;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-right: 1.2rem;
-    padding-left: 1.2rem;
-    background-color: #5596f4;
-    color: #ffffff;
-    border: none;
-    border-radius: 7px;
-    font-size: 15px;
-    text-align: center;
+  align-items: center;
+  width: 11rem;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1.2rem;
+  padding-left: 1.2rem;
+  background-color: #5596f4;
+  color: #ffffff;
+  border: none;
+  border-radius: 7px;
+  font-size: 15px;
+  text-align: center;
 }
+
+
+
 
 
 /*links color and hide underline in header*/
 a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bolder;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bolder;
 }
+
 
 
 /*header size & color*/
@@ -81,7 +84,6 @@ a {
     height: 70px;
     position: fixed;
     border: 3px solid #212121;
-
 }
 
 /*title & links*/
@@ -99,8 +101,6 @@ a {
     padding: 20px;
 }
 
-
-
 /***********ProductDisplay***************/
 body {
     min-height: 100vh;
@@ -108,6 +108,24 @@ body {
 }
 
 .products {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.products p {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 12px;
+  padding: 10px;
+}
+
+.products span {
+  font-weight: bolder;
+  padding-bottom: 10px;
+  font-size: 13px;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -130,30 +148,16 @@ body {
 }
 
 .products img {
-    width: 55%;
-    align-items: center;
-}
-
-.products h1,
-p span {
-    padding: 5px;
+  width: 45%;
+  align-items: center;
 }
 
 .products:nth-child(2) img {
-    width: 80%;
+  width: 70%;
 }
 
 .products:nth-child(odd) {
-    background-color: #fff;
-}
-
-.products button {
-    /*knappDesign*/
-    color: #e54f4f;
-}
-
-.fa-cart-plus:before {
-    padding-right: 5px;
+  background-color: #f5f5f5;
 }
 
 /***********ProductDisplayEnd***************/
