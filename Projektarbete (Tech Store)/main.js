@@ -29,7 +29,7 @@ function addProductsToWebpage() {
                <p>${product.description}</p>
                <img><img src='assets/${product.image}'</img></img>
                <span>${product.price} kr </span>
-               <button class="test"><i class="fa-solid fa-cart-plus"></i>  Lägg till i kundvagnen </button>
+               <button id=${product.title} class="addToCart" onclick="test()"><i class="fa-solid fa-cart-plus"></i>  Lägg till i kundvagnen </button>
             </div>
          `;
   }

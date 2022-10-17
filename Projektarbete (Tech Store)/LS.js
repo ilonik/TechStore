@@ -1,50 +1,36 @@
  //OM MAN KLICKAR PÅ LÄGG TILL I KUNDVAGNEN SKA DETTA SKE
- const addToCart = document.querySelector(".addToBasketBtn")
+ const addToCartBtns = document.querySelectorAll(".addToCart")
+console.log(addToCartBtns)
 
+//  let cart = {};
+//  if (localStorage.getItem("cart")){
+//     cart = JSON.parse(localStorage.getItem("cart"))
+//  }
 
- let cart = {};
- if (localStorage.getItem("cart")){
-    cart = JSON.parse(localStorage.getItem("cart"))
- }
-
-
-addToCart.addEventListener("click", function () {
-     //hämtar hem LS
-     const listFromStorage = JSON.parse(localStorage.getItem("cart"))
-     //lägger till i LS
-     listFromStorage.push('qweqe')
-     //Skickar in tillbaka i LS
-     localStorage.setItem("cart", JSON.stringify(listFromStorage))
+for (const btn of addToCartBtns) {
+    btn.addEventListener("click", function (e){
+    const id = e.target.id
+    console.log(id)
+    })
     
- })
+}
+
+function test (e){
+    const id = e.target.id
+    console.log(id)
+  }
+
+// addToCartBtns.addEventListener("click", function () {
+//      //hämtar hem LS
+//      const listFromStorage = JSON.parse(localStorage.getItem("cart"))
+//      //lägger till i LS
+//      listFromStorage.push('qweqe')
+//      //Skickar in tillbaka i LS
+//      localStorage.setItem("cart", JSON.stringify(listFromStorage))
+    
+//  })
 
 // bheöver något sådant här typ (let i = 0; i < btns.length; i++) {
-
-
- const myArray = [
-     {
-         "title": "iPhone X",
-         "description": "Last years phone from Apple with a beautiful all display front.",
-         "image": "iPhoneX.png",
-         "price": 11495
-     }, {
-         "title": "One Plus 5",
-         "description": "Sleek and powerful smartphone from One Plus.",
-         "image": "OnePlus5.png",
-         "price": 4995
-     }, {
-         "title": "Galaxy S8",
-         "description": "Really cool edge to edge smartphone from Samsung.",
-         "image": "SamsungS8.png",
-         "price": 7990
-     }, {
-         "title": "LG V30",
-         "description": "Super nice and beautiful smartphone from LG.",
-         "image": "LGV30.png",
-         "price": 7495
-     }
-     
- ]
 
 
 
