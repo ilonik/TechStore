@@ -8,7 +8,7 @@
  }
 
 
-/*  addToCart.addEventListener("click", function () {
+addToCart.addEventListener("click", function () {
      //hämtar hem LS
      const listFromStorage = JSON.parse(localStorage.getItem("cart"))
      //lägger till i LS
@@ -16,7 +16,7 @@
      //Skickar in tillbaka i LS
      localStorage.setItem("cart", JSON.stringify(listFromStorage))
     
- }) */
+ })
 
 // bheöver något sådant här typ (let i = 0; i < btns.length; i++) {
 
