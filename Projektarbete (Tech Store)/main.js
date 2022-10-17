@@ -19,27 +19,31 @@ function initSite() {
 
 /** Uses the loaded products data to create a visible product list on the website */
 function addProductsToWebpage() {
-  const placeholder = document.querySelector("#product-output");
-  let output = "";
-  for (let product of listOfProducts) {
-    output += `    
-            <div class="products">
-               <h1>${product.title}</h1>
-               <p>${product.description}</p>
-               <img src='assets/${product.image}'</img>
-               <span>${product.price} kr </span>
-               <div class="addToBasket">
-               <button class="addToBasketBtn"><i class="fa-solid fa-cart-arrow-down"></i>Lägg till i kundvagnen </button>
-               </div>
-            </div>
+  let html
+  let id = 0;
+  for (const product of listOfProducts) {
+    html = `
+      <div class="products_container">
+      <h2>${product.title}</h2>
+      <p>${product.description}</p>
+      <img src=/assets/${product.image}">
+      <p>${product.price} kr</p>
+      <button id=${id} onclick="test(this)">Add to cart </button>
+      </div>
          `;
+
+         id++;
+         main.insertAdjacentHTML("beforeEnd", html);
   }
-
-
-  placeholder.innerHTML = output; 
 }
-  
 
+function test (e){
+  const product = listOfProducts [e.id];
+  console.log(product)
+}
+
+
+  //placeholder.innerHTML = output;   
   // Check your console to see that the products are stored in the listOfProducts varible.
   //console.log(listOfProducts);
 
