@@ -39,23 +39,24 @@ function initSite() {
 //   placeholder.innerHTML = output; 
 // }
  
-
+const main = document.querySelector("main")
 function addProductsToWebpage() {
-  let html
+  let output
   let id = 0;
   for (const product of listOfProducts) {
-    html = `
-      <div class="products_container">
+    output = `
+      <div class="products">
       <h2>${product.title}</h2>
       <p>${product.description}</p>
-      <img src=/assets/${product.image}">
+      <img src='assets/${product.image}'</img>
       <p>${product.price} kr</p>
-      <button id=${id} onclick="test(this)">Add to cart </button>
+      
+      <button class="addToBasketBtn" id=${id} onclick="test(this)"><i class="fa-solid fa-cart-arrow-down"></i>Lägg till i kundvagnen</button>
       </div>
          `;
 
          id++;
-         main.insertAdjacentHTML("beforeEnd", html);
+         main.insertAdjacentHTML("beforeEnd", output);
   }
 }
 
