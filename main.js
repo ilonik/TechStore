@@ -105,7 +105,6 @@ function showCart() {
 
   const listfromstorage = JSON.parse(localStorage.getItem("cart"))
   let output
-  let id = 0;
   for (const product of listfromstorage) {
     output = `
       <div class="products">
@@ -115,9 +114,8 @@ function showCart() {
       <p>${product.price} kr</p>
       </div>
          `;
-         //main.insertAdjacentHTML("beforeEnd", output);
   }
-  sectionShoppingCart.innerHTML = output;   
+  body.innerHTML = output;   
 }
 
 
