@@ -65,7 +65,7 @@ function addProductsToWebpage() {
 
          id++;
          main.insertAdjacentHTML("beforeEnd", output);
-  }
+  } 
 }
 
 
@@ -96,6 +96,13 @@ cartIcon.addEventListener("click", showCart)
 
 
 function showCart() {
+
+  //skapar en section-tag här!
+  const sectionShoppingCart = document.createElement("section")
+  const body = document.querySelector("body")
+  body.appendChild(sectionShoppingCart)
+
+
   const listfromstorage = JSON.parse(localStorage.getItem("cart"))
   let output
   let id = 0;
@@ -108,13 +115,14 @@ function showCart() {
       <p>${product.price} kr</p>
       </div>
          `;
-
-
          //main.insertAdjacentHTML("beforeEnd", output);
   }
-
-  placeholder.innerHTML = output;   
+  sectionShoppingCart.innerHTML = output;   
 }
+
+
+
+
 
 // function getit (e){
 //   const product = listOfProducts [e.id];
