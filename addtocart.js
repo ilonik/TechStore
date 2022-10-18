@@ -37,27 +37,6 @@
 //gör en ny js fil för kundvagnssidan annars måste man hålla på med location objektet och det är asjobbigt.
 
 
-var listOfProducts;
-
-/** Get products from the json file and store it in a gobal variable */
-function loadProducts() {
-  fetch("./products.json")
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (products) {
-      listOfProducts = products;
-      addProductsToWebpage();
-    });
-}
-
-function initSite() {
-  loadProducts();
-  showCart();
-  // This would also be a good place to initialize other parts of the UI
-}
-
-
 
 
 
