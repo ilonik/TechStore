@@ -70,7 +70,7 @@ function addProductsToWebpage() {
 
 
 const myArray = []
-// make local storage stay when
+// make local storage stay when refreshing
 if (!localStorage.getItem("cart")) { 
 
   localStorage.setItem("cart", JSON.stringify(myArray))  
@@ -83,40 +83,13 @@ function test (e){
 
   const listfromstorage = JSON.parse(localStorage.getItem("cart"))
   //get LS
-  console.log(listfromstorage.push(product))
+  listfromstorage.push(product)
   //send back to ls
   localStorage.setItem("cart", JSON.stringify(listfromstorage))
 }
 
 
-const cartIcon = document.querySelector(".shoppingcart")
 
-cartIcon.addEventListener("click", showCart)
-
-
-
-function showCart() {
-
-  //skapar en section-tag här!
-  const sectionShoppingCart = document.createElement("section")
-  const body = document.querySelector("body")
-  body.appendChild(sectionShoppingCart)
-
-
-  const listfromstorage = JSON.parse(localStorage.getItem("cart"))
-  let output
-  for (const product of listfromstorage) {
-    output = `
-      <div class="products">
-      <h2>${product.title}</h2>
-      <p>${product.description}</p>
-      <img src='assets/${product.image}'</img>
-      <p>${product.price} kr</p>
-      </div>
-         `;
-  }
-  body.innerHTML = output;   
-}
 
 
 
