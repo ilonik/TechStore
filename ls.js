@@ -35,12 +35,22 @@ function addProductsToWebpage() {
          id++;
          main.insertAdjacentHTML("beforeEnd", html);
   }
+  
+  localStorage.setItem("myList", JSON.stringify(myArray))
 }
-
+const myArray =[]
 function test (e){
   const product = listOfProducts [e.id];
-  console.log(product)
+  //console.log(product)
+
+  const listfromstorage = json.parse(localstorage.getitem("cart"))
+  //lägger till i ls
+  console.log(listfromstorage.push(product))
+  //skickar in tillbaka i ls
+  localstorage.setitem("cart", json.stringify(listfromstorage))
 }
+
+
 
 
   //placeholder.innerHTML = output;   
