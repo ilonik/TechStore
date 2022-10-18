@@ -89,26 +89,40 @@ function test (e){
 }
 
 
+const cartIcon = document.querySelector(".shoppingcart")
+
+cartIcon.addEventListener("click", showCart)
+
+
+
 function showCart() {
+  const listfromstorage = JSON.parse(localStorage.getItem("cart"))
   let output
   let id = 0;
-  for (const product of listOfProducts) {
+  for (const product of listfromstorage) {
     output = `
       <div class="products">
       <h2>${product.title}</h2>
       <p>${product.description}</p>
       <img src='assets/${product.image}'</img>
       <p>${product.price} kr</p>
-      
-      <div class="shoppingcart" id=${id} onclick="test(this)"><i class="fa-solid fa-cart-arrow-down"></i>Lägg till i kundvagnen</button>
       </div>
          `;
 
-         id++;
+
          main.insertAdjacentHTML("beforeEnd", output);
   }
 }
 
+// function getit (e){
+//   const product = listOfProducts [e.id];
+
+//   const listfromstorage = JSON.parse(localStorage.getItem("cart"))
+//   //get LS
+//   console.log(listfromstorage.push(product))
+//   //send back to ls
+//   localStorage.setItem("cart", JSON.stringify(listfromstorage))
+// }
 
 
 
