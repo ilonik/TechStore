@@ -1,3 +1,11 @@
+// function init () {
+//   if (localStorage.getItem("cart"))
+//   (JSON.parse(localStorage.getItem("cart")))
+
+// }
+
+
+
 var listOfProducts;
 
 /** Get products from the json file and store it in a gobal variable */
@@ -60,10 +68,52 @@ function addProductsToWebpage() {
   }
 }
 
+
+const myArray = []
+// make local storage stay when
+if (!localStorage.getItem("cart")) { 
+
+  localStorage.setItem("cart", JSON.stringify(myArray))  
+  }
+
+
+//localStorage.setItem("cart", JSON.stringify(myArray))
 function test (e){
   const product = listOfProducts [e.id];
-  console.log(product)
+
+  const listfromstorage = JSON.parse(localStorage.getItem("cart"))
+  //get LS
+  console.log(listfromstorage.push(product))
+  //send back to ls
+  localStorage.setItem("cart", JSON.stringify(listfromstorage))
 }
+
+
+function showCart() {
+  let output
+  let id = 0;
+  for (const product of listOfProducts) {
+    output = `
+      <div class="products">
+      <h2>${product.title}</h2>
+      <p>${product.description}</p>
+      <img src='assets/${product.image}'</img>
+      <p>${product.price} kr</p>
+      
+      <div class="shoppingcart" id=${id} onclick="test(this)"><i class="fa-solid fa-cart-arrow-down"></i>Lägg till i kundvagnen</button>
+      </div>
+         `;
+
+         id++;
+         main.insertAdjacentHTML("beforeEnd", output);
+  }
+}
+
+
+
+
+
+
 
   // Check your console to see that the products are stored in the listOfProducts varible.
   //console.log(listOfProducts);
