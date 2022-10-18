@@ -110,8 +110,10 @@ function showCart() {
          `;
 
 
-         main.insertAdjacentHTML("beforeEnd", output);
+         //main.insertAdjacentHTML("beforeEnd", output);
   }
+
+  placeholder.innerHTML = output;   
 }
 
 // function getit (e){
