@@ -1,13 +1,13 @@
 showCart();
 
 function showCart() {
-  const basketOutPut = document.querySelector("#basket-output");
+  let basketOutPut = document.querySelector("#basket-output");
 
-  const listfromstorage = JSON.parse(localStorage.getItem("cart"));
+  myArray = JSON.parse(localStorage.getItem("cart"));
 
   let output;
-  for (const product of listfromstorage) {
-    localStorage.getItem(basketOutPut);
+  for (const product of myArray) {
+    //localStorage.getItem("basketOutPut");
     output = `
       <div class="products">
       <h2>${product.title}</h2>
@@ -17,11 +17,10 @@ function showCart() {
       </div>
          `;
     console.log(output);
+    basketOutPut.insertAdjacentHTML("beforeEnd", output);
   }
 
   //basketOutPut.innerHTML = output
-
-  basketOutPut.insertAdjacentHTML("beforeEnd", output);
 
   //basketOutPut.insertAdjacentHTML("beforeEnd", output);
 }
