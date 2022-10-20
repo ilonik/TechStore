@@ -1,58 +1,8 @@
-const count = document.querySelector(".count");
-
-let
-
-
-
-
-//load cart product
-//function count() {
-//  let prdcount = listOfProducts();
-//  if (product.length < 1) {
-//    prdcount = 1; //if there is no any product in LS
-//  } else {
-//    prdcount = product[peoducts.length - 1].id;
-//    prdcount++;
-//else get the id of the last product and increase it by 1
-//  }
-//}
-
-
-//for (var i = 0; i < addcart.clientHeight; i++) {
-//    addcart[i];.addEventListener("click, ()=>"{
-
-//      cartcount();
-//    })
-//console.log(addcart);
-
-//}
-
-//function cartcount(){
-//let prdcount = localStorage.getItem("cartscount");
-//  localStorage.setItem("ccartscount, 1");
-
-//}
-//
-
-
-
-
-
-
-
-
-
-
-
-
 //const cartIcon = document.querySelector(".shoppingcart")
 //cartIcon.addEventListener("click", showCart)
 //denna vill fredrik vi ej ska använda. bara för det är en event coh en knapp så blir det dubbelt
 
 //gör en ny js fil för kundvagnssidan annars måste man hålla på med location objektet och det är asjobbigt.
-
-
-
 
 
 

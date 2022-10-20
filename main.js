@@ -46,7 +46,7 @@ function initSite() {
 
 //   placeholder.innerHTML = output; 
 // }
- 
+
 const main = document.querySelector("main")
 function addProductsToWebpage() {
   let output
@@ -63,23 +63,33 @@ function addProductsToWebpage() {
       </div>
          `;
 
-         id++;
-         main.insertAdjacentHTML("beforeEnd", output);
-  } 
+    id++;
+    main.insertAdjacentHTML("beforeEnd", output);
+  }
 }
 
 
-const myArray = []
+let myArray = []
 // make local storage stay when refreshing
-if (!localStorage.getItem("cart")) { 
-
-  localStorage.setItem("cart", JSON.stringify(myArray))  
-  }
-
-
+if (!localStorage.getItem("cart")) {
+  localStorage.setItem("cart", JSON.stringify(myArray));
+}
 //localStorage.setItem("cart", JSON.stringify(myArray))
-function test (e){
-  const product = listOfProducts [e.id];
+//var myArray = [];
+//function test() {
+//var count = document.querySelector(".count");
+//myArray++;
+//count.innerHTML = myArray;
+//}
+
+
+
+localStorage.setItem("cart", JSON.stringify(myArray))
+function test(e) {
+  var count = document.querySelector(".count");
+  myArray++;
+  count.innerHTML = myArray;
+  const product = listOfProducts[e.id];
 
   const listfromstorage = JSON.parse(localStorage.getItem("cart"))
   //get LS
