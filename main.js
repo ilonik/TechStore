@@ -67,12 +67,12 @@ function addProductsToWebpage() {
 }
 
 const myArray = [];
-// make local storage stay when refreshing
+// make local storage stay when refreshing. OBS VERKAR INTE FYLLA NÅGON FUNKTION ÄNDÅ?
 if (!localStorage.getItem("cart")) {
   localStorage.setItem("cart", JSON.stringify(myArray));
 }
 
-//localStorage.setItem("cart", JSON.stringify(myArray))
+//localStorage.setItem("cart", JSON.stringify(myArray)))
 function test(e) {
   const product = listOfProducts[e.id];
 
@@ -82,16 +82,6 @@ function test(e) {
   //send back to ls
   localStorage.setItem("cart", JSON.stringify(listfromstorage));
 }
-
-// function getit (e){
-//   const product = listOfProducts [e.id];
-
-//   const listfromstorage = JSON.parse(localStorage.getItem("cart"))
-//   //get LS
-//   console.log(listfromstorage.push(product))
-//   //send back to ls
-//   localStorage.setItem("cart", JSON.stringify(listfromstorage))
-// }
 
 // Check your console to see that the products are stored in the listOfProducts varible.
 //console.log(listOfProducts);
