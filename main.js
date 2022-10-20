@@ -4,8 +4,6 @@
 
 // }
 
-
-
 var listOfProducts;
 
 /** Get products from the json file and store it in a gobal variable */
@@ -22,6 +20,7 @@ function loadProducts() {
 
 function initSite() {
   loadProducts();
+
   // This would also be a good place to initialize other parts of the UI
 }
 
@@ -30,7 +29,7 @@ function initSite() {
 //   const placeholder = document.querySelector("#product-output");
 //   let output = "";
 //   for (let product of listOfProducts) {
-//     output += `    
+//     output += `
 //             <div class="products">
 //                <h1>${product.title}</h1>
 //                <p>${product.description}</p>
@@ -43,13 +42,12 @@ function initSite() {
 //          `;
 //   }
 
-
-//   placeholder.innerHTML = output; 
+//   placeholder.innerHTML = output;
 // }
- 
-const main = document.querySelector("main")
+
+const main = document.querySelector("main");
 function addProductsToWebpage() {
-  let output
+  let output;
   let id = 0;
   for (const product of listOfProducts) {
     output = `
@@ -63,37 +61,27 @@ function addProductsToWebpage() {
       </div>
          `;
 
-         id++;
-         main.insertAdjacentHTML("beforeEnd", output);
-  } 
+    id++;
+    main.insertAdjacentHTML("beforeEnd", output);
+  }
 }
 
-
-const myArray = []
+const myArray = [];
 // make local storage stay when refreshing
-if (!localStorage.getItem("cart")) { 
-
-  localStorage.setItem("cart", JSON.stringify(myArray))  
-  }
-
+if (!localStorage.getItem("cart")) {
+  localStorage.setItem("cart", JSON.stringify(myArray));
+}
 
 //localStorage.setItem("cart", JSON.stringify(myArray))
-function test (e){
-  const product = listOfProducts [e.id];
+function test(e) {
+  const product = listOfProducts[e.id];
 
-  const listfromstorage = JSON.parse(localStorage.getItem("cart"))
+  const listfromstorage = JSON.parse(localStorage.getItem("cart"));
   //get LS
-  listfromstorage.push(product)
+  listfromstorage.push(product);
   //send back to ls
-  localStorage.setItem("cart", JSON.stringify(listfromstorage))
+  localStorage.setItem("cart", JSON.stringify(listfromstorage));
 }
-
-
-
-
-
-
-
 
 // function getit (e){
 //   const product = listOfProducts [e.id];
@@ -105,30 +93,18 @@ function test (e){
 //   localStorage.setItem("cart", JSON.stringify(listfromstorage))
 // }
 
+// Check your console to see that the products are stored in the listOfProducts varible.
+//console.log(listOfProducts);
 
-
-
-
-
-  // Check your console to see that the products are stored in the listOfProducts varible.
-  //console.log(listOfProducts);
-
-  //POP-UP VID GENOMFÖRT KÖP. SKA VARA PÅ KUNDVAGNSSIDAN OOOOOBS DENNA ÄR BORTKOMMENDERAD TILLFÄLLIGT FÖR ATT SLIPPA FELMEDDELANDE!!!!!!!!!!!!!!!
+//POP-UP VID GENOMFÖRT KÖP. SKA VARA PÅ KUNDVAGNSSIDAN OOOOOBS DENNA ÄR BORTKOMMENDERAD TILLFÄLLIGT FÖR ATT SLIPPA FELMEDDELANDE!!!!!!!!!!!!!!!
 //   const completeYouPurchase = document.querySelector(".completeYouPurchase");
 
 //   completeYouPurchase.addEventListener("click", function () {
 //     alert("Ditt köp är genomfört!");
 //   });
 
+// Add your code here, remember to brake your code in to smaller function blocks
+// to reduce complexity and increase readability. Each function should have
+// an explainetory comment like the one for this function, see row 22.
 
-
-
-
-
-
-  // Add your code here, remember to brake your code in to smaller function blocks
-  // to reduce complexity and increase readability. Each function should have
-  // an explainetory comment like the one for this function, see row 22.
-
-  // TODO: Remove the console.log and these comments when you've read them.
-
+// TODO: Remove the console.log and these comments when you've read them.

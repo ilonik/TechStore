@@ -1,56 +1,35 @@
 //const addcart = document.querySelector(".addcart");
 
-
-
-
 //for (var i = 0; i < addcart.clientHeight; i++) {
 //    addcart[i];.addEventListener("click, ()=>"{
-        
-  //      cartcount();
-    //    })
-    //console.log(addcart);
+
+//      cartcount();
+//    })
+//console.log(addcart);
 
 //}
 
 //function cartcount(){
 //let prdcount = localStorage.getItem("cartscount");
-  //  localStorage.setItem("ccartscount, 1");
+//  localStorage.setItem("ccartscount, 1");
 
 //}
 //
-
-
-
-
-
-
-
-
-
-
-
 
 //const cartIcon = document.querySelector(".shoppingcart")
 //cartIcon.addEventListener("click", showCart)
 //denna vill fredrik vi ej ska använda. bara för det är en event coh en knapp så blir det dubbelt
 
 //gör en ny js fil för kundvagnssidan annars måste man hålla på med location objektet och det är asjobbigt.
-
-
-
-
-
-
+const basketOutput = document.querySelector("#basket-output");
 function showCart() {
-  console.log("showCart")
   //skapar en section-tag här!
   // const sectionShoppingCart = document.createElement("section")
   // const body = document.querySelector("body")
   // body.appendChild(sectionShoppingCart)
-  const basketOutput = document.querySelector("basket-output")
 
-  const listfromstorage = JSON.parse(localStorage.getItem("cart"))
-  let output
+  const listfromstorage = JSON.parse(localStorage.getItem("cart"));
+  let output;
   for (const product of listfromstorage) {
     output = `
       <div class="products">
@@ -60,9 +39,9 @@ function showCart() {
       <p>${product.price} kr</p>
       </div>
          `;
-
+    basketOutput.insertAdjacentHTML("beforeEnd", output);
   }
-  console.log(myArray)
-  basketOutput.insertAdjacentHTML("beforeEnd", output);
-  //basketOutput.innerHTML = output;   
+  //console.log(myArray);
+  //basketOutput.insertAdjacentHTML("beforeEnd", output);
+  //basketOutput.innerHTML = output;
 }
