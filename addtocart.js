@@ -1,20 +1,33 @@
-//const addcart = document.querySelector(".addcart");
+
+showCart()
 
 
+function showCart() {
+ 
+  const basketOutPut = document.querySelector("#basket-output")
 
+  const listfromstorage = JSON.parse(localStorage.getItem("cart"))
+  
+  let output
+  for (const product of listfromstorage){
+    localStorage.getItem(basketOutPut)
+    output = `
+      <div class="products">
+      <h2>${product.title}</h2>
+      <p>${product.description}</p>
+      <img src='assets/${product.image}'</img>
+      <p>${product.price} kr</p>
+      </div>
+         `;
+    console.log(output)
+    
 
-//for (var i = 0; i < addcart.clientHeight; i++) {
-//    addcart[i];.addEventListener("click, ()=>"{
-        
-  //      cartcount();
-    //    })
-    //console.log(addcart);
+  }
+  
+  //basketOutPut.innerHTML = output
+  
+  basketOutPut.insertAdjacentHTML("beforeEnd", output);
 
-//}
+  //basketOutPut.insertAdjacentHTML("beforeEnd", output);
 
-//function cartcount(){
-//let prdcount = localStorage.getItem("cartscount");
-  //  localStorage.setItem("ccartscount, 1");
-
-//}
-//
+}
