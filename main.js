@@ -86,6 +86,9 @@ function test(e) {
   listfromstorage.push(product)
   //send back to ls
   localStorage.setItem("cart", JSON.stringify(listfromstorage))
+
+  var count = document.querySelector(".count");
+  count.innerHTML = listfromstorage.length;
 }
 
 

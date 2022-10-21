@@ -1,12 +1,20 @@
-
-showCart()
-
+// load cart product
+function mycount() {
+  let prdcount = getprdcountfromstorage();
+  if (prodduct.length < 1) {
+    prdcount = 1;
+  } else {
+    prdcount = prdcount[peoducts.length - 1].id;
+    prdcount++;
+  }
+}
 
 function showCart() {
+  console.log("showcart");
 
-  const basketOutPut = document.querySelector("#basket-output")
+  const basketOutPut = document.querySelector("basket-output");
 
-  const listfromstorage = JSON.parse(localStorage.getItem("cart"))
+  const listfromstorage = JSON.parse(localStorage.getItem("cart"));
   let output
   for (const product of listfromstorage) {
     localStorage.getItem(basketOutPut)
