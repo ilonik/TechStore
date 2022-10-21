@@ -15,6 +15,7 @@ function loadProducts() {
     .then(function (products) {
       listOfProducts = products;
       addProductsToWebpage();
+      myArray = JSON.parse(localStorage.getItem("cart"));
     });
 }
 
@@ -23,27 +24,6 @@ function initSite() {
 
   // This would also be a good place to initialize other parts of the UI
 }
-
-/** Uses the loaded products data to create a visible product list on the website */
-// function addProductsToWebpage() {
-//   const placeholder = document.querySelector("#product-output");
-//   let output = "";
-//   for (let product of listOfProducts) {
-//     output += `
-//             <div class="products">
-//                <h1>${product.title}</h1>
-//                <p>${product.description}</p>
-//                <img src='assets/${product.image}'</img>
-//                <span>${product.price} kr </span>
-//                <div class="addToBasket">
-//                <button class="addToBasketBtn"><i class="fa-solid fa-cart-arrow-down"></i>Lägg till i kundvagnen </button>
-//                </div>
-//             </div>
-//          `;
-//   }
-
-//   placeholder.innerHTML = output;
-// }
 
 const main = document.querySelector("main");
 function addProductsToWebpage() {
@@ -87,8 +67,6 @@ function test(e) {
   localStorage.setItem("cart", JSON.stringify(myArray));
   /*sedan vill jag sätta min array i localstorege och stringifya den så jag kan använda den till senare. */
 }
-
-console.log(myArray);
 
 // Check your console to see that the products are stored in the listOfProducts varible.
 //console.log(listOfProducts);

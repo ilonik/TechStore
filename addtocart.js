@@ -1,4 +1,6 @@
-showCart();
+function inBasketSite() {
+  showCart();
+}
 
 function showCart() {
   let basketOutPut = document.querySelector("#basket-output");
@@ -18,7 +20,7 @@ function showCart() {
       <p>${product.price} kr</p>
       </div>
          `;
-    console.log(output);
+
     basketOutPut.insertAdjacentHTML("beforeEnd", output);
   }
 
