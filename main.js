@@ -74,17 +74,6 @@ function test(e) {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 function inBasketSite() {
   showCart();
 }
