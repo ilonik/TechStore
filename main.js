@@ -67,6 +67,7 @@ function addProductsToWebpage() {
 }
 
 let myArray = [];
+/*ändrat om min array till en let för att jag ska kunna lägga till i den, men constans tillåter mig inte ändra på den. */
 // make local storage stay when refreshing. OBS VERKAR INTE FYLLA NÅGON FUNKTION ÄNDÅ?
 if (!localStorage.getItem("cart")) {
   localStorage.setItem("cart", JSON.stringify(myArray));
@@ -81,9 +82,13 @@ function test(e) {
   //listfromstorage.push(product);
   //send back to ls
   //localStorage.setItem("cart", JSON.stringify(listfromstorage));
-  myArray.push(product);
-  localStorage.setItem("cart", JSON.stringify(myArray));
-  JSON.parse(localStorage.getItem("cart"));
+  myArray.push(
+    product
+  ); /*vi vill ta våran array och lägga till i listOfproducts*/
+  localStorage.setItem(
+    "cart",
+    JSON.stringify(myArray)
+  ); /*sedan vill jag sätta min array i localstorege och stringifya den så jag kan använda den till senare. */
 }
 
 console.log(myArray);
