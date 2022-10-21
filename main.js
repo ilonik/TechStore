@@ -69,26 +69,16 @@ function addProductsToWebpage() {
 }
 
 
-let myArray = []
+const myArray = []
 // make local storage stay when refreshing
 if (!localStorage.getItem("cart")) {
-  localStorage.setItem("cart", JSON.stringify(myArray));
+
+  localStorage.setItem("cart", JSON.stringify(myArray))
 }
+
+
 //localStorage.setItem("cart", JSON.stringify(myArray))
-//var myArray = [];
-//function test() {
-//var count = document.querySelector(".count");
-//myArray++;
-//count.innerHTML = myArray;
-//}
-
-
-
-localStorage.setItem("cart", JSON.stringify(myArray))
 function test(e) {
-  var count = document.querySelector(".count");
-  myArray++;
-  count.innerHTML = myArray;
   const product = listOfProducts[e.id];
 
   const listfromstorage = JSON.parse(localStorage.getItem("cart"))
@@ -97,23 +87,6 @@ function test(e) {
   //send back to ls
   localStorage.setItem("cart", JSON.stringify(listfromstorage))
 }
-
-
-
-
-
-
-
-
-// function getit (e){
-//   const product = listOfProducts [e.id];
-
-//   const listfromstorage = JSON.parse(localStorage.getItem("cart"))
-//   //get LS
-//   console.log(listfromstorage.push(product))
-//   //send back to ls
-//   localStorage.setItem("cart", JSON.stringify(listfromstorage))
-// }
 
 
 
