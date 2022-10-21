@@ -61,11 +61,11 @@ button {
   text-align: center;
 }
 
+/**********Header**********/
 /*links color and hide underline in header*/
 a {
   color: #ffffff;
   text-decoration: none;
-  font-weight: bolder;
 }
 
 .headertitle h1 {
@@ -85,9 +85,6 @@ a {
 
 /*title & links*/
 .headertitle {
-  color: #5596f4;
-  font-weight: bold;
-  text-decoration: none;
   padding: 9px;
   font-family: "Poppins", sans-serif;
 }
@@ -95,9 +92,19 @@ a {
 /*shopping cart & link*/
 .shoppingcart {
   color: #ffffff;
-  padding: 20px;
+  padding: 10px;
+  display: flex;
+  width: 90px;
+  /*width: 6rem*/
+  font-size: 2rem;
 }
 
+.count {
+  margin-left: 20px;
+  font-size: 30px;
+}
+
+/**********Header**********/
 /***********ProductDisplay***************/
 body {
   min-height: 100vh;
