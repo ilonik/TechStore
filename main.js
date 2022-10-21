@@ -82,13 +82,10 @@ function test(e) {
   //listfromstorage.push(product);
   //send back to ls
   //localStorage.setItem("cart", JSON.stringify(listfromstorage));
-  myArray.push(
-    product
-  ); /*vi vill ta våran array och lägga till i listOfproducts*/
-  localStorage.setItem(
-    "cart",
-    JSON.stringify(myArray)
-  ); /*sedan vill jag sätta min array i localstorege och stringifya den så jag kan använda den till senare. */
+  myArray.push(product);
+  /*vi vill ta våran array och lägga till i listOfproducts*/
+  localStorage.setItem("cart", JSON.stringify(myArray));
+  /*sedan vill jag sätta min array i localstorege och stringifya den så jag kan använda den till senare. */
 }
 
 console.log(myArray);
