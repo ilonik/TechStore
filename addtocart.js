@@ -4,9 +4,11 @@ function showCart() {
   let basketOutPut = document.querySelector("#basket-output");
 
   myArray = JSON.parse(localStorage.getItem("cart"));
+  /*hämrar jag bara min array för att det är min array jag vill lopa igenom*/
 
   let output;
   for (const product of myArray) {
+    /*här sätter jag in min egna array för att jag vill lopa den*/
     //localStorage.getItem("basketOutPut");
     output = `
       <div class="products">
