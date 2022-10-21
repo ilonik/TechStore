@@ -63,7 +63,7 @@ function showCart() {
   let output;
   for (const product of myArray) {
     output = `
-      <div class="products">
+      <div class="Cart-products">
       <h2>${product.title}</h2>
       <p>${product.description}</p>
       <img src='assets/${product.image}'</img>
