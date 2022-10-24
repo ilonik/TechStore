@@ -16,6 +16,19 @@ function initSite() {
   loadProducts();
 }
 
+function inBasketSite() {
+  showCart();
+  printlength();
+
+  buybtn.addEventListener("click", () => {
+    //printlength();
+    localStorage.clear();
+    showCart();
+    console.log("here");
+    printlength();
+  });
+}
+
 const main = document.querySelector("main");
 
 function addProductsToWebpage() {
@@ -38,16 +51,6 @@ function addProductsToWebpage() {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
 //let myArray = [];
 
 // if (!localStorage.getItem("cart")) {
@@ -59,15 +62,13 @@ function test(e) {
   const product = listOfProducts[e.id];
   if (!localStorage.getItem("cart")) {
     localStorage.setItem("cart", JSON.stringify([product]));
-  }else{
+  } else {
     const listfromstorage = JSON.parse(localStorage.getItem("cart"));
-    listfromstorage.push(product)
+    listfromstorage.push(product);
     localStorage.setItem("cart", JSON.stringify(listfromstorage));
   }
   //myArray.push(product);
-  
 
-  
   //get LS
   //listfromstorage.push(product);
   // myArray.push(product);
@@ -75,20 +76,17 @@ function test(e) {
   //send back to ls
   //localStorage.setItem("cart", JSON.stringify(listfromstorage));
 
-
   // var count = document.querySelector(".count");
   // count.innerHTML = listfromstorage.length;
-  printlength()
+  printlength();
 }
 
-function inBasketSite() {
-  showCart();
-  printlength()
-}
-
+let basketOutPut = document.querySelector("#basket-output");
 function showCart() {
-  let basketOutPut = document.querySelector("#basket-output");
-  basketOutPut.innerHTML = ""
+  if (!localStorage.getItem("cart")) {
+    return;
+  }
+  basketOutPut.innerHTML = "";
   let id = 0;
   const products = JSON.parse(localStorage.getItem("cart"));
   let output;
@@ -103,35 +101,47 @@ function showCart() {
       </div>
     </div>
       `;
-      id++;
+    id++;
+
     basketOutPut.insertAdjacentHTML("beforeend", output);
   }
-  
+  completePurchase();
 }
 
-
-function testRemove(e)
-{
+function testRemove(e) {
   //const product = myArray[e.id];
   //console.log(product)
 
   //nedan lyste men dne behöver vi ju  ej
   const listfromstorage = JSON.parse(localStorage.getItem("cart"));
-  listfromstorage.splice(e, 1)
+  listfromstorage.splice(e, 1);
   localStorage.setItem("cart", JSON.stringify(listfromstorage));
   //localStorage.setItem("cart", JSON.stringify(myArray));
   //myArray = JSON.parse(localStorage.getItem("cart"));
 
-  showCart()
-  printlength()
+  showCart();
+  printlength();
 }
 
-function printlength () {
-  const listfromstorage = JSON.parse(localStorage.getItem("cart"));
+function printlength() {
   var count = document.querySelector(".count");
-  count.innerHTML = listfromstorage.length;
+  if (!localStorage.getItem("cart")) {
+    count.innerHTML = " ";
+  } else {
+    const listfromstorage = JSON.parse(localStorage.getItem("cart"));
+
+    count.innerHTML = listfromstorage.length;
+  }
 }
 
+//**completePurchase funtion starts**/
+const buybtn = document.createElement("button");
+
+function completePurchase() {
+  buybtn.innerHTML = "Genomför köpet";
+  basketOutPut.appendChild(buybtn);
+}
+//**CompletePurchase function End **/
 
 //load cart product
 // function mycount() {
