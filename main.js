@@ -59,15 +59,15 @@ function test(e) {
   const product = listOfProducts[e.id];
   if (!localStorage.getItem("cart")) {
     localStorage.setItem("cart", JSON.stringify([product]));
-  }else{
+  } else {
     const listfromstorage = JSON.parse(localStorage.getItem("cart"));
     listfromstorage.push(product)
     localStorage.setItem("cart", JSON.stringify(listfromstorage));
   }
   //myArray.push(product);
-  
 
-  
+
+
   //get LS
   //listfromstorage.push(product);
   // myArray.push(product);
@@ -96,22 +96,21 @@ function showCart() {
     output = `
     <div class="Cart-products">
     <h2>${product.title}</h2>
-    <p>${product.description}</p>
+    <p class="disc">${product.description}</p>
     <img src='assets/${product.image}'</img>
-    <p>${product.price} kr</p>
+    <p class="prise">${product.price} kr</p>
     <button class="removeBtn" id=${id} onclick="testRemove(${id})"><i class="fa-regular fa-trash-can"></i>Ta bort </button>
       </div>
     </div>
       `;
-      id++;
+    id++;
     basketOutPut.insertAdjacentHTML("beforeend", output);
   }
-  
+
 }
 
 
-function testRemove(e)
-{
+function testRemove(e) {
   //const product = myArray[e.id];
   //console.log(product)
 
@@ -126,7 +125,7 @@ function testRemove(e)
   printlength()
 }
 
-function printlength () {
+function printlength() {
   const listfromstorage = JSON.parse(localStorage.getItem("cart"));
   var count = document.querySelector(".count");
   count.innerHTML = listfromstorage.length;

@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+/***********ProductDisplay in kundvagn***************/
+.Cart-products {
+    border: solid blue;
+    max-width: 10rem;
+    height: 15rem;
+    padding: 1rem;
+    text-align: center;
+
+
+    margin-left: 2rem;
+    margin-top: 15rem;
+    border-radius: 12px;
+
+}
+
+.Cart-products img {
+    width: 40%;
+    align-items: center;
+}
+
+.Cart-products p {
+    display: none;
+}
+
+/***********ProductDisplay in kundvagn***************/
