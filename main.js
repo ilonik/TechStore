@@ -19,12 +19,12 @@ function initSite() {
 function inBasketSite() {
   showCart();
   printlength();
-
+  totalPrice();
   buybtn.addEventListener("click", () => {
     //printlength();
+
     localStorage.clear();
     showCart();
-    console.log("here");
     printlength();
   });
 }
@@ -86,7 +86,7 @@ function showCart() {
   if (!localStorage.getItem("cart")) {
     return;
   }
-  basketOutPut.innerHTML = "";
+  basketOutPut.innerHTML = " ";
   let id = 0;
   const products = JSON.parse(localStorage.getItem("cart"));
   let output;
@@ -136,12 +136,32 @@ function printlength() {
 
 //**completePurchase funtion starts**/
 const buybtn = document.createElement("button");
-
+buybtn.classList.add("bbla");
 function completePurchase() {
   buybtn.innerHTML = "Genomför köpet";
   basketOutPut.appendChild(buybtn);
 }
 //**CompletePurchase function End **/
+const TotalPrice = document.querySelector(".totalPrice");
+
+//**totalPrice function Starts**/
+function totalPrice() {
+  if (!localStorage.getItem("cart")) {
+    TotalPrice.innerHTML = " ";
+  }
+  let sum = JSON.parse(localStorage.getItem("cart")).reduce(function (
+    prev,
+    next
+  ) {
+    return prev + next.price;
+  },
+  0);
+  TotalPrice.innerText = sum + " kr";
+
+  basketOutPut.appendChild(TotalPrice);
+}
+
+//**totalPrice function Ends**/
 
 //load cart product
 // function mycount() {
