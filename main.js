@@ -143,9 +143,10 @@ function completePurchase() {
   basketOutPut.appendChild(buybtn);
 }
 //**CompletePurchase function End **/
-const TotalPrice = document.querySelector(".totalPrice");
 
 //**totalPrice function Starts**/
+const TotalPrice = document.querySelector(".totalPrice");
+
 function totalPrice() {
   let sum = JSON.parse(localStorage.getItem("cart")).reduce(function (
     prev,
