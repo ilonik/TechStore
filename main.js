@@ -19,10 +19,9 @@ function initSite() {
 function inBasketSite() {
   showCart();
   printlength();
-  totalPrice();
+  //totalPrice();
   buybtn.addEventListener("click", () => {
     //printlength();
-
     localStorage.clear();
     showCart();
     printlength();
@@ -105,6 +104,7 @@ function showCart() {
 
     basketOutPut.insertAdjacentHTML("beforeend", output);
   }
+  totalPrice();
   completePurchase();
 }
 
@@ -136,7 +136,8 @@ function printlength() {
 
 //**completePurchase funtion starts**/
 const buybtn = document.createElement("button");
-buybtn.classList.add("bbla");
+buybtn.classList.add("completeYourPurchaseBtn");
+
 function completePurchase() {
   buybtn.innerHTML = "Genomför köpet";
   basketOutPut.appendChild(buybtn);
@@ -146,9 +147,6 @@ const TotalPrice = document.querySelector(".totalPrice");
 
 //**totalPrice function Starts**/
 function totalPrice() {
-  if (!localStorage.getItem("cart")) {
-    TotalPrice.innerHTML = " ";
-  }
   let sum = JSON.parse(localStorage.getItem("cart")).reduce(function (
     prev,
     next
