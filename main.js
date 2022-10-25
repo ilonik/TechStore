@@ -139,7 +139,9 @@ const buybtn = document.createElement("button");
 buybtn.classList.add("completeYourPurchaseBtn");
 
 function completePurchase() {
-  buybtn.innerHTML = "Genomför köpet";
+  let Check = `<i class="fa-solid fa-check"></i>
+`;
+  buybtn.innerHTML = Check + " Genomför köpet";
   basketOutPut.appendChild(buybtn);
 }
 //**CompletePurchase function End **/
