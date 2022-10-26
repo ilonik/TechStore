@@ -95,9 +95,9 @@ function showCart() {
   for (const product of products) {
     output = `
     <div class="Cart-products">
-    <h2>${product.title}</h2>
-    <p class="disc">${product.description}</p>
     <img src='assets/${product.image}'</img>
+    <h2>${product.title}</h2>
+    <!--<p class="disc">${product.description}</p>-->
     <p class="prise">${product.price} kr</p>
     <button class="removeBtn" id=${id} onclick="testRemove(${id})"><i class="fa-regular fa-trash-can"></i>Ta bort </button>
       </div>
