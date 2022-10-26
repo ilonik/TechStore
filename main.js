@@ -97,8 +97,8 @@ function showCart() {
     <div class="Cart-products">
     <img src='assets/${product.image}'</img>
     <h2>${product.title}</h2>
-    <!--<p class="disc">${product.description}</p>-->
-    <p class="prise">${product.price} kr</p>
+    <p class="description">${product.description}</p>
+    <p>${product.price} kr</p>
     <button class="removeBtn" id=${id} onclick="testRemove(${id})"><i class="fa-regular fa-trash-can"></i>Ta bort </button>
       </div>
     </div>
