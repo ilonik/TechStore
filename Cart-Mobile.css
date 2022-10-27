@@ -28,7 +28,14 @@
     padding-top: 15%; 
 }
 
+.Cart-products prod {
+    display: none;
 
+}
+
+.description {
+    display: none;
+}
 
 /*
 .Cart-products p {
