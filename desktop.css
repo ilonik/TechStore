@@ -37,14 +37,22 @@
 }
 
 .shoppingtitle {
-    border: solid red;
+    /*border: solid red;*/
     color: #212121;
     max-width: 240px;
     margin-left: 35rem;
-    padding: 10px;
     margin-top: 3rem;
     font-weight: bolder;
     font-size: large;
+
+
+}
+
+.shoppingtitle i {
+    float: left;
+    font-size: 2rem;
+    margin-top: 12px;
+    margin-right: 5px;
 
 }
 
