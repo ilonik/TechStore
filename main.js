@@ -86,9 +86,10 @@ function showCart() {
   for (const product of myArray) {
     output = `
     <div class="Cart-products">
+    <img src='assets/${product.image}'</img>
     <h2>${product.title}</h2>
     <p>${product.description}</p>
-    <img src='assets/${product.image}'</img>
+    
     <p>${product.price} kr</p>
     </div>
       `;
