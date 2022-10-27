@@ -8,7 +8,7 @@ function loadProducts() {
     .then(function (products) {
       listOfProducts = products;
       addProductsToWebpage();
-      myArray = JSON.parse(localStorage.getItem("cart"));
+      //myArray = JSON.parse(localStorage.getItem("cart"));
     });
 }
 
@@ -48,72 +48,106 @@ function addProductsToWebpage() {
 
 
 
-let myArray = [];
+//let myArray = [];
 
-if (!localStorage.getItem("cart")) {
-  localStorage.setItem("cart", JSON.stringify(myArray));
-}
+// if (!localStorage.getItem("cart")) {
+//   localStorage.setItem("cart", JSON.stringify(myArray));
+// }
 
 function test(e) {
+  // let listfromstorage;
   const product = listOfProducts[e.id];
-  myArray.push(product);
-  localStorage.setItem("cart", JSON.stringify(myArray));
+  if (!localStorage.getItem("cart")) {
+    localStorage.setItem("cart", JSON.stringify([product]));
+  }else{
+    const listfromstorage = JSON.parse(localStorage.getItem("cart"));
+    listfromstorage.push(product)
+    localStorage.setItem("cart", JSON.stringify(listfromstorage));
+  }
+  //myArray.push(product);
+  
 
-  const listfromstorage = JSON.parse(localStorage.getItem("cart"));
+  
   //get LS
-  listfromstorage.push(product);
+  //listfromstorage.push(product);
   // myArray.push(product);
-  console.log(listfromstorage);
+  //console.log(listfromstorage);
   //send back to ls
-  localStorage.setItem("cart", JSON.stringify(listfromstorage));
+  //localStorage.setItem("cart", JSON.stringify(listfromstorage));
 
 
-  var count = document.querySelector(".count");
-  count.innerHTML = listfromstorage.length;
-
+  // var count = document.querySelector(".count");
+  // count.innerHTML = listfromstorage.length;
+  printlength()
 }
-
 
 function inBasketSite() {
   showCart();
+  printlength()
 }
 
 function showCart() {
   let basketOutPut = document.querySelector("#basket-output");
-
-  myArray = JSON.parse(localStorage.getItem("cart"));
+  basketOutPut.innerHTML = ""
+  let id = 0;
+  const products = JSON.parse(localStorage.getItem("cart"));
   let output;
-  for (const product of myArray) {
+  for (const product of products) {
     output = `
     <div class="Cart-products">
+    
+  
     <img src='assets/${product.image}'</img>
     <h2>${product.title}</h2>
-    <p>${product.description}</p>
     
     <p>${product.price} kr</p>
-    
+    <button class="removeBtn" id=${id} onclick="testRemove(${id})"><i class="fa-regular fa-trash-can"></i>Ta bort </button>
+      </div>
+      
     </div>
+    
       `;
-
-    basketOutPut.insertAdjacentHTML("beforeEnd", output);
+      id++;
+    basketOutPut.insertAdjacentHTML("beforeend", output);
   }
+  
 }
 
 
+function testRemove(e)
+{
+  //const product = myArray[e.id];
+  //console.log(product)
 
+  //nedan lyste men dne behöver vi ju  ej
+  const listfromstorage = JSON.parse(localStorage.getItem("cart"));
+  listfromstorage.splice(e, 1)
+  localStorage.setItem("cart", JSON.stringify(listfromstorage));
+  //localStorage.setItem("cart", JSON.stringify(myArray));
+  //myArray = JSON.parse(localStorage.getItem("cart"));
 
+  showCart()
+  printlength()
+}
+
+function printlength () {
+  const listfromstorage = JSON.parse(localStorage.getItem("cart"));
+  var count = document.querySelector(".count");
+  count.innerHTML = listfromstorage.length;
+}
 
 
 //load cart product
-function mycount() {
-  let prdcount = getprdcountfromstorage();
-  if (product.length < 1) {
-    prdcount = 1;
-  } else {
-    prdcount = product[peoducts.length - 1].id;
-    prdcount++;
-  }
-}
+// function mycount() {
+//   //let prdcount = getprdcountfromstorage();
+//   if (product.length < 1) {
+//     prdcount = 1;
+//   } else {
+//     prdcount = product[peoducts.length - 1].id;
+//     prdcount++;
+//   }
+
+// }
 // Check your console to see that the products are stored in the listOfProducts varible.
 //console.log(listOfProducts);
 
