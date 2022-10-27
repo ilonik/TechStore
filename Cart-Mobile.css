@@ -1,4 +1,7 @@
-/******************** STYLE FOR CART MOBILE *******************************/
+/**********Header**********/
+/***********cartDispla PHONEy***************/
+
+
 #basket-output {
     display: flex;
     flex-wrap: wrap;
@@ -94,3 +97,7 @@
 
 
 
+/***********ProductDisplayEnd***************/
+
+
+/***********cartDispla TABLETy***************/
