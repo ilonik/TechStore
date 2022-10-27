@@ -91,6 +91,7 @@ function showCart() {
     <p>${product.description}</p>
     
     <p>${product.price} kr</p>
+    
     </div>
       `;
 
