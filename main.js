@@ -95,13 +95,17 @@ function showCart() {
   for (const product of products) {
     output = `
     <div class="Cart-products">
-    <h2>${product.title}</h2>
-    <p>${product.description}</p>
+    
+  
     <img src='assets/${product.image}'</img>
+    <h2>${product.title}</h2>
+    <p class="description">${product.description}</p>
     <p>${product.price} kr</p>
     <button class="removeBtn" id=${id} onclick="testRemove(${id})"><i class="fa-regular fa-trash-can"></i>Ta bort </button>
       </div>
+      
     </div>
+    
       `;
       id++;
     basketOutPut.insertAdjacentHTML("beforeend", output);
