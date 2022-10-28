@@ -16,6 +16,18 @@ function initSite() {
   loadProducts();
 }
 
+function inBasketSite() {
+  showCart();
+  printlength();
+  //totalPrice();
+  buybtn.addEventListener("click", () => {
+    //printlength();
+    localStorage.clear();
+    showCart();
+    printlength();
+  });
+}
+
 const main = document.querySelector("main");
 
 function addProductsToWebpage() {
@@ -75,12 +87,16 @@ function inBasketSite() {
 
 function showCart() {
   let basketOutPut = document.querySelector("#basket-output");
-  basketOutPut.innerHTML = "";
-  let id = 0;
-  const products = JSON.parse(localStorage.getItem("cart"));
-  let output;
-  for (const product of products) {
-    output = `
+  function showCart() {
+    if (!localStorage.getItem("cart")) {
+      return;
+    }
+    basketOutPut.innerHTML = " ";
+    let id = 0;
+    const products = JSON.parse(localStorage.getItem("cart"));
+    let output;
+    for (const product of products) {
+      output = `
     <div class="Cart-products">
     <h2>${product.title}</h2>
     <p>${product.description}</p>
@@ -90,31 +106,69 @@ function showCart() {
       </div>
     </div>
       `;
-    id++;
-    basketOutPut.insertAdjacentHTML("beforeend", output);
+      id++;
+
+      basketOutPut.insertAdjacentHTML("beforeend", output);
+    }
+    totalPrice();
+    completePurchase();
+  }
+
+  function testRemove(e) {
+    //const product = myArray[e.id];
+    //console.log(product)
+
+    //nedan lyste men dne behöver vi ju  ej
+    const listfromstorage = JSON.parse(localStorage.getItem("cart"));
+    listfromstorage.splice(e, 1);
+    localStorage.setItem("cart", JSON.stringify(listfromstorage));
+    //localStorage.setItem("cart", JSON.stringify(myArray));
+    //myArray = JSON.parse(localStorage.getItem("cart"));
+
+    showCart();
+    printlength();
+  }
+
+  function printlength() {
+    var count = document.querySelector(".count");
+    if (!localStorage.getItem("cart")) {
+      count.innerHTML = " ";
+    } else {
+      const listfromstorage = JSON.parse(localStorage.getItem("cart"));
+
+      count.innerHTML = listfromstorage.length;
+    }
+  }
+
+  //**completePurchase funtion starts**/
+  const buybtn = document.createElement("button");
+  buybtn.classList.add("completeYourPurchaseBtn");
+
+  function completePurchase() {
+    let Check = `<i class="fa-solid fa-check"></i>
+`;
+    buybtn.innerHTML = Check + " Genomför köpet";
+    basketOutPut.appendChild(buybtn);
+  }
+  //**CompletePurchase function End **/
+
+  //**totalPrice function Starts**/
+  const TotalPrice = document.querySelector(".totalPrice");
+
+  function totalPrice() {
+    let sum = JSON.parse(localStorage.getItem("cart")).reduce(function (
+      prev,
+      next
+    ) {
+      return prev + next.price;
+    },
+    0);
+    TotalPrice.innerText = sum + " kr";
+
+    basketOutPut.appendChild(TotalPrice);
   }
 }
-
-function testRemove(e) {
-  //const product = myArray[e.id];
-  //console.log(product)
-
-  //nedan lyste men dne behöver vi ju  ej
-  const listfromstorage = JSON.parse(localStorage.getItem("cart"));
-  listfromstorage.splice(e, 1);
-  localStorage.setItem("cart", JSON.stringify(listfromstorage));
-  //localStorage.setItem("cart", JSON.stringify(myArray));
-  //myArray = JSON.parse(localStorage.getItem("cart"));
-
-  showCart();
-  printlength();
-}
-
-function printlength() {
-  const listfromstorage = JSON.parse(localStorage.getItem("cart"));
-  var count = document.querySelector(".count");
-  count.innerHTML = listfromstorage.length;
-}
+//**totalPrice function Ends**/
 
 //load cart product
 // function mycount() {
