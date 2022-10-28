@@ -38,10 +38,7 @@ main {
     background-color: aqua;
     flex-wrap: wrap;
     margin-top: 2rem;
-    /*max-width: 60%;*/
-    /*width: 60%;*/
-    height: 90%;
-    /*gör inget */
+    max-width: 51%;
     margin-bottom: 9rem;
 }
 
@@ -77,9 +74,25 @@ main {
 
 /**********Desktop**********/
 /**********Tablet**********/
-/*@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 767px) {
+    #basket-output {
+        display: flex;
+        background-color: rgb(63, 161, 28);
+        flex-wrap: wrap;
+        max-width: 100%;
+        /*margin-top: 2rem;
+        margin-bottom: 9rem;*/
+    }
 
-}*/
+    .Cart-products {
+        max-width: 7rem;
+        padding: 3px;
+    }
+
+    .Cart-products removeBtn {
+        width: 6px;
+    }
+}
 
 
 /**********tablet**********/
