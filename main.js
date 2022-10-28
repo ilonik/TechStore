@@ -14,6 +14,7 @@ function loadProducts() {
 
 function initSite() {
   loadProducts();
+  printlength();
 }
 
 function inBasketSite() {
