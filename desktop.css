@@ -11,18 +11,16 @@
     color: #212121;
     margin-top: 7rem;
     font-size: large;
-    position: absolute;
 }
 
 .shoppingtitle h1 {
     font-weight: bolder;
+    /*Varför funkar de ej*/
 }
 
 .shoppingtitle i {
     font-size: 2rem;
     margin-right: 11px;
-    width: 30px;
-    height: 30px;
 }
 
 
@@ -31,17 +29,19 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 6rem;
+    /*padding: 0 6rem;*/
 }
 
 
 #basket-output {
     display: flex;
-    /*background-color: aqua;*/
+    background-color: aqua;
     flex-wrap: wrap;
-    margin-top: 13rem;
-    width: 60%;
+    margin-top: 2rem;
+    /*max-width: 60%;*/
+    /*width: 60%;*/
     height: 90%;
+    /*gör inget */
     margin-bottom: 9rem;
 }
 
@@ -63,6 +63,7 @@ main {
 
 .Cart-products h2 {
     font-weight: bolder;
+    /*gör inget*/
 }
 
 .description {
@@ -71,7 +72,7 @@ main {
 
 .Cart-products p {
     font-size: 17px;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 /**********Desktop**********/
