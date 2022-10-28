@@ -12,18 +12,18 @@ button {
 /* Ta bort knapp */
 .removeBtn {
   align-items: center;
-  width: 8.2rem;
+  width: 6.3rem;
   flex-wrap: nowrap;
-  justify-content: space-around;
-  padding-top: 0.6rem;
-  padding-bottom: 0.6rem;
+  justify-content: space-between;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
   padding-right: 1rem;
   padding-left: 1rem;
   background-color: #e54f4f;
   color: #ffffff;
   border: none;
   border-radius: 12px;
-  font-size: 17px;
+  font-size: 14px;
 }
 
 /* Lägg till i kungvagnen knapp */
@@ -44,7 +44,10 @@ button {
 }
 
 /*slutför ditt köp knapp*/
-.completeYourPurchaseBtn {
+
+
+/*.completeYourPurchaseBtn {
+  justify-content: center;
   align-items: center;
   width: 11rem;
   flex-wrap: nowrap;
