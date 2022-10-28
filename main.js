@@ -38,16 +38,6 @@ function addProductsToWebpage() {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
 //let myArray = [];
 
 // if (!localStorage.getItem("cart")) {
@@ -59,15 +49,13 @@ function test(e) {
   const product = listOfProducts[e.id];
   if (!localStorage.getItem("cart")) {
     localStorage.setItem("cart", JSON.stringify([product]));
-  }else{
+  } else {
     const listfromstorage = JSON.parse(localStorage.getItem("cart"));
-    listfromstorage.push(product)
+    listfromstorage.push(product);
     localStorage.setItem("cart", JSON.stringify(listfromstorage));
   }
   //myArray.push(product);
-  
 
-  
   //get LS
   //listfromstorage.push(product);
   // myArray.push(product);
@@ -75,20 +63,19 @@ function test(e) {
   //send back to ls
   //localStorage.setItem("cart", JSON.stringify(listfromstorage));
 
-
   // var count = document.querySelector(".count");
   // count.innerHTML = listfromstorage.length;
-  printlength()
+  printlength();
 }
 
 function inBasketSite() {
   showCart();
-  printlength()
+  printlength();
 }
 
 function showCart() {
   let basketOutPut = document.querySelector("#basket-output");
-  basketOutPut.innerHTML = ""
+  basketOutPut.innerHTML = "";
   let id = 0;
   const products = JSON.parse(localStorage.getItem("cart"));
   let output;
@@ -107,35 +94,31 @@ function showCart() {
     </div>
     
       `;
-      id++;
+    id++;
     basketOutPut.insertAdjacentHTML("beforeend", output);
   }
-  
 }
 
-
-function testRemove(e)
-{
+function testRemove(e) {
   //const product = myArray[e.id];
   //console.log(product)
 
   //nedan lyste men dne behöver vi ju  ej
   const listfromstorage = JSON.parse(localStorage.getItem("cart"));
-  listfromstorage.splice(e, 1)
+  listfromstorage.splice(e, 1);
   localStorage.setItem("cart", JSON.stringify(listfromstorage));
   //localStorage.setItem("cart", JSON.stringify(myArray));
   //myArray = JSON.parse(localStorage.getItem("cart"));
 
-  showCart()
-  printlength()
+  showCart();
+  printlength();
 }
 
-function printlength () {
+function printlength() {
   const listfromstorage = JSON.parse(localStorage.getItem("cart"));
   var count = document.querySelector(".count");
   count.innerHTML = listfromstorage.length;
 }
-
 
 //load cart product
 // function mycount() {

@@ -163,3 +163,8 @@ body {
 }
 
 /***********ProductDisplayEnd***************/
+
+.totalPrice {
+  width: 100%;
+  height: 100%;
+}
