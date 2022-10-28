@@ -45,8 +45,7 @@ button {
 
 /*slutför ditt köp knapp*/
 
-
-/*.completeYourPurchaseBtn {
+.completeYourPurchaseBtn {
   justify-content: center;
   align-items: center;
   width: 11rem;
