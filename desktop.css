@@ -7,8 +7,9 @@
 
 #basket-output {
     display: flex;
-    padding: 40px;
+    padding: 100px;
     width: 100px;
+    /*height: 100vh;*/
     margin-left: 20rem;
     margin-top: 10rem;
     position: absolute;
@@ -18,18 +19,19 @@
 .Cart-products {
     border: solid blue;
     width: 10rem;
+    height: 15rem;
     padding: 1rem;
     text-align: center;
     margin-left: 14px;
     /*margin-top: 10px;*/
     border-radius: 12px;
-    background-color: rgb(233, 233, 233);
-    /*display: flex;*/
-    justify-content: flex-end;
+    background-color: #f5f5f5;
+
 }
 
 .Cart-products img {
-    width: 40%;
+    /*width: 40%;*/
+    height: 6rem;
     align-items: center;
 }
 
@@ -42,12 +44,11 @@
 }
 
 .shoppingtitle {
-    border: solid red;
+    display: flex;
     color: #212121;
-    /*max-width: 240px;*/
-    margin-left: 40rem;
-    margin-top: 5rem;
-    /*font-weight: bolder;*/
+    margin-left: 37rem;
+    margin-top: 6rem;
+    font-weight: bolder;
     font-size: large;
     position: absolute;
 
@@ -55,10 +56,9 @@
 }
 
 .shoppingtitle i {
-    float: left;
     font-size: 2rem;
-    margin-top: 10px;
-    /*margin-right: 5px;*/
+    margin-top: 13px;
+    margin-right: 11px;
     width: 30px;
     height: 30px;
 
@@ -66,6 +66,14 @@
 
 /**********Desktop**********/
 /**********Tablet**********/
+/*@media (min-width: 481px) and (max-width: 767px) {
+
+
+
+
+
+
+}*/
 
 
 
