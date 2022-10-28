@@ -4,15 +4,20 @@
     padding: 0;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 3rem;
+}
+
 
 #basket-output {
     display: flex;
-    padding: 100px;
-    width: 100px;
-    /*height: 100vh;*/
-    margin-left: 20rem;
-    margin-top: 10rem;
-    position: absolute;
+    background-color: aqua;
+    flex-wrap: wrap;
+    margin-top: 12rem;
+    /*position: absolute;*/
 }
 
 
@@ -44,11 +49,13 @@
 }
 
 .shoppingtitle {
+    background-color: bisque;
     display: flex;
+    align-items: center;
     color: #212121;
-    margin-left: 37rem;
-    margin-top: 6rem;
-    font-weight: bolder;
+
+    margin-top: 7rem;
+    /*font-weight: bolder;*/
     font-size: large;
     position: absolute;
 
@@ -57,7 +64,6 @@
 
 .shoppingtitle i {
     font-size: 2rem;
-    margin-top: 13px;
     margin-right: 11px;
     width: 30px;
     height: 30px;
