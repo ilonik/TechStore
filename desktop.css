@@ -4,62 +4,18 @@
     padding: 0;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 3rem;
-}
-
-
-#basket-output {
-    display: flex;
-    background-color: aqua;
-    flex-wrap: wrap;
-    margin-top: 12rem;
-    /*position: absolute;*/
-}
-
-
-.Cart-products {
-    border: solid blue;
-    width: 10rem;
-    height: 15rem;
-    padding: 1rem;
-    text-align: center;
-    margin-left: 14px;
-    /*margin-top: 10px;*/
-    border-radius: 12px;
-    background-color: #f5f5f5;
-
-}
-
-.Cart-products img {
-    /*width: 40%;*/
-    height: 6rem;
-    align-items: center;
-}
-
-/*.Cart-products p:nth-child(2) {
-    display: none;
-}*/
-
-.description {
-    display: none;
-}
-
 .shoppingtitle {
-    background-color: bisque;
+    /*background-color: bisque;*/
     display: flex;
     align-items: center;
     color: #212121;
-
     margin-top: 7rem;
-    /*font-weight: bolder;*/
     font-size: large;
     position: absolute;
+}
 
-
+.shoppingtitle h1 {
+    font-weight: bolder;
 }
 
 .shoppingtitle i {
@@ -67,23 +23,62 @@ main {
     margin-right: 11px;
     width: 30px;
     height: 30px;
+}
 
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 6rem;
+}
+
+
+#basket-output {
+    display: flex;
+    /*background-color: aqua;*/
+    flex-wrap: wrap;
+    margin-top: 13rem;
+    width: 60%;
+    height: 90%;
+    margin-bottom: 9rem;
+}
+
+.Cart-products {
+    border: solid blue;
+    height: 15rem;
+    padding: 1rem;
+    text-align: center;
+    margin-left: 14px;
+    margin-top: 10px;
+    border-radius: 12px;
+    background-color: #f5f5f5;
+}
+
+.Cart-products img {
+    height: 50%;
+    align-items: center;
+}
+
+.Cart-products h2 {
+    font-weight: bolder;
+}
+
+.description {
+    display: none;
+}
+
+.Cart-products p {
+    font-size: 17px;
+    font-weight: bold;
 }
 
 /**********Desktop**********/
 /**********Tablet**********/
 /*@media (min-width: 481px) and (max-width: 767px) {
 
-
-
-
-
-
 }*/
-
-
-
-
 
 
 /**********tablet**********/
