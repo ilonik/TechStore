@@ -16,18 +16,6 @@ function initSite() {
   loadProducts();
 }
 
-function inBasketSite() {
-  showCart();
-  printlength();
-  //totalPrice();
-  buybtn.addEventListener("click", () => {
-    //printlength();
-    localStorage.clear();
-    showCart();
-    printlength();
-  });
-}
-
 const main = document.querySelector("main");
 
 function addProductsToWebpage() {
@@ -80,12 +68,14 @@ function test(e) {
   printlength();
 }
 
-let basketOutPut = document.querySelector("#basket-output");
+function inBasketSite() {
+  showCart();
+  printlength();
+}
+
 function showCart() {
-  if (!localStorage.getItem("cart")) {
-    return;
-  }
-  basketOutPut.innerHTML = " ";
+  let basketOutPut = document.querySelector("#basket-output");
+  basketOutPut.innerHTML = "";
   let id = 0;
   const products = JSON.parse(localStorage.getItem("cart"));
   let output;
@@ -101,11 +91,8 @@ function showCart() {
     </div>
       `;
     id++;
-
     basketOutPut.insertAdjacentHTML("beforeend", output);
   }
-  totalPrice();
-  completePurchase();
 }
 
 function testRemove(e) {
@@ -124,45 +111,10 @@ function testRemove(e) {
 }
 
 function printlength() {
+  const listfromstorage = JSON.parse(localStorage.getItem("cart"));
   var count = document.querySelector(".count");
-  if (!localStorage.getItem("cart")) {
-    count.innerHTML = " ";
-  } else {
-    const listfromstorage = JSON.parse(localStorage.getItem("cart"));
-
-    count.innerHTML = listfromstorage.length;
-  }
+  count.innerHTML = listfromstorage.length;
 }
-
-//**completePurchase funtion starts**/
-const buybtn = document.createElement("button");
-buybtn.classList.add("completeYourPurchaseBtn");
-
-function completePurchase() {
-  let Check = `<i class="fa-solid fa-check"></i>
-`;
-  buybtn.innerHTML = Check + " Genomför köpet";
-  basketOutPut.appendChild(buybtn);
-}
-//**CompletePurchase function End **/
-
-//**totalPrice function Starts**/
-const TotalPrice = document.querySelector(".totalPrice");
-
-function totalPrice() {
-  let sum = JSON.parse(localStorage.getItem("cart")).reduce(function (
-    prev,
-    next
-  ) {
-    return prev + next.price;
-  },
-  0);
-  TotalPrice.innerText = sum + " kr";
-
-  basketOutPut.appendChild(TotalPrice);
-}
-
-//**totalPrice function Ends**/
 
 //load cart product
 // function mycount() {
