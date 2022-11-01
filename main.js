@@ -125,7 +125,7 @@ function completePurchase() {
 }
 //**CompletePurchase function End **/
 
-//**totalPrice function Starts**/
+//**totalPrice function Starts***/
 const TotalPrice = document.querySelector(".totalPrice");
 
 function totalPrice() {
