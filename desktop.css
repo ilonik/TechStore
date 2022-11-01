@@ -37,7 +37,7 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     display: flex;
-    background-color: aqua;
+    /* background-color: aqua; */
     gap: 1em;
     padding: 1rem;
 }
