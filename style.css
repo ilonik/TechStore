@@ -4,9 +4,11 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
-button {
-  display: flex;
+.fa-cart-arrow-down:before {
+  padding-right: 10px;
+}
+.fa-trash-can:before {
+  padding-right: 7px;
 }
 
 /* Ta bort knapp */
@@ -24,6 +26,7 @@ button {
   border: none;
   border-radius: 12px;
   font-size: 14px;
+  cursor: pointer;
 }
 
 /* Lägg till i kungvagnen knapp */
@@ -41,6 +44,11 @@ button {
   border: none;
   border-radius: 7px;
   font-size: 15px;
+  cursor: pointer;
+}
+
+.addToBasketBtn:hover {
+  background-color: #0066ff;
 }
 
 /*slutför ditt köp knapp*/
@@ -52,7 +60,6 @@ button {
 .completeYourPurchaseBtn {
   justify-content: center;
   align-items: center;
-
   flex-wrap: nowrap;
   justify-content: space-between;
   padding-top: 0.5rem;
@@ -65,7 +72,8 @@ button {
   border-radius: 7px;
   font-size: 15px;
   text-align: center;
-  margin-bottom: 17vw;
+
+  cursor: pointer;
 }
 
 /**********Header**********/
@@ -168,4 +176,45 @@ body {
 .totalPrice {
   width: 100%;
   height: 100%;
+}
+
+/**CompletedOrderSite Start**/
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.AllOrderInfo {
+  border: 2px solid #5596f4;
+  padding: 1rem;
+  width: 90%;
+  height: 30%;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #98c3ff87;
+}
+
+.orderConfirmation,
+.completeYouPurchase,
+.OrderConfirm {
+  margin: 10px;
+}
+
+.completeYourPurchaseBtn {
+  margin-top: 10px;
+}
+
+.completeYourPurchaseBtn:hover {
+  background-color: #0066ff;
+}
+
+.OrderConfirm {
+  font-size: 20px;
 }

@@ -69,6 +69,10 @@
   .products:nth-child(2) img {
     width: 25%;
   }
+
+  .AllOrderInfo {
+    width: 30%;
+  }
 }
 
 @media only screen and (min-width: 1281px) {
@@ -79,6 +83,10 @@
 
   .products:nth-child(2) img {
     width: 20%;
+  }
+
+  .AllOrderInfo {
+    width: 30%;
   }
 }
 /******DeskTopEnd***********/
