@@ -25,6 +25,7 @@ function inBasketSite() {
     localStorage.clear();
     showCart();
     printlength();
+    window.location.href = "completed-Purchase.html";
   });
 }
 
@@ -121,7 +122,7 @@ buybtn.classList.add("completeYourPurchaseBtn");
 function completePurchase() {
   let Check = `<i class="fa-solid fa-check"></i>
 `;
-  buybtn.innerHTML = Check + " Genomför köpet";
+  buybtn.innerHTML = Check + " Slutför ditt köp";
   basketOutPut.appendChild(buybtn);
 }
 //**CompletePurchase function End **/
@@ -137,7 +138,7 @@ function totalPrice() {
     return prev + next.price;
   },
   0);
-  TotalPrice.innerText = sum + " kr";
+  TotalPrice.innerText = "Totalt pris: " + sum + " kr";
 
   basketOutPut.appendChild(TotalPrice);
 }
