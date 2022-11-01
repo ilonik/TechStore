@@ -59,26 +59,8 @@ function test(e) {
     listfromstorage.push(product);
     localStorage.setItem("cart", JSON.stringify(listfromstorage));
   }
-  //myArray.push(product);
 
-
-
-  //get LS
-  //listfromstorage.push(product);
-  // myArray.push(product);
-  //console.log(listfromstorage);
-  //send back to ls
-  //localStorage.setItem("cart", JSON.stringify(listfromstorage));
-
-
-  // var count = document.querySelector(".count");
-  // count.innerHTML = listfromstorage.length;
-  printlength()
-}
-
-function inBasketSite() {
-  showCart();
-  printlength()
+  printlength();
 }
 
 function showCart() {
@@ -92,6 +74,8 @@ function showCart() {
   for (const product of products) {
     output = `
     <div class="Cart-products">
+    
+  
     <img src='assets/${product.image}'</img>
     <h2>${product.title}</h2>
     <p class="description">${product.description}</p>
@@ -120,7 +104,6 @@ function testRemove(e) {
 }
 
 function printlength() {
-  const listfromstorage = JSON.parse(localStorage.getItem("cart"));
   var count = document.querySelector(".count");
   if (!localStorage.getItem("cart")) {
     count.innerHTML = " ";
@@ -153,7 +136,7 @@ function totalPrice() {
   ) {
     return prev + next.price;
   },
-    0);
+  0);
   TotalPrice.innerText = sum + " kr";
 
   basketOutPut.appendChild(TotalPrice);
