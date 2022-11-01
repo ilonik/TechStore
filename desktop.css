@@ -1,4 +1,4 @@
-/**********Desktop**********/
+/**********Desktop/tablet**********/
 * {
     margin: 0;
     padding: 0;
@@ -28,7 +28,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*padding: 0 6rem;*/
     justify-content: center;
     max-height: 50%;
 }
@@ -37,16 +36,10 @@ main {
 #basket-output {
     flex-wrap: wrap;
     justify-content: center;
-    /* flex-direction: row; */
     display: flex;
     background-color: aqua;
-    /* margin-top: 2rem; */
     gap: 1em;
-
-    /*max-width: 51%;*/
-
     padding: 1rem;
-
 }
 
 .Cart-products {
@@ -54,8 +47,6 @@ main {
     height: 14rem;
     text-align: center;
     padding: 1rem;
-    /* margin-left: 14px; */
-    /* margin-top: 10px; */
     border-radius: 12px;
     background-color: #f5f5f5;
 }
@@ -79,9 +70,4 @@ main {
     font-weight: bolder;
 }
 
-/**********Desktop**********/
-/**********Tablet**********/
-@media (min-width: 481px) and (max-width: 767px) {}
-
-
-/**********tablet**********/
+/**********Desktop/tablet**********/
