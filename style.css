@@ -45,29 +45,28 @@ button {
 
 /*slutför ditt köp knapp*/
 
-.totalPrice{
+.totalPrice {
   text-align: center;
 }
 
-
 .completeYourPurchaseBtn {
-    justify-content: center;
-    align-items: center;
-    width: 59%;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-right: 1.2rem;
-    padding-left: 1.2rem;
-    background-color: #5596f4;
-    color: #ffffff;
-    border: none;
-    border-radius: 7px;
-    font-size: 15px;
-    text-align: center;
-    margin-bottom: 17vw;
-  }
+  justify-content: center;
+  align-items: center;
+
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1.2rem;
+  padding-left: 1.2rem;
+  background-color: #5596f4;
+  color: #ffffff;
+  border: none;
+  border-radius: 7px;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 17vw;
+}
 
 /**********Header**********/
 /*links color and hide underline in header*/
