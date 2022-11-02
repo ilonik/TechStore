@@ -38,6 +38,7 @@ main {
     justify-content: center;
     display: flex;
     /* background-color: aqua; */
+    flex: 25%;
     gap: 1em;
     padding: 1rem;
 }
