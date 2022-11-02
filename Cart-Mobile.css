@@ -29,6 +29,7 @@
   .Cart-products h2 {
     font-weight: 600;
     font-size: 25px;
+    white-space: nowrap;
   }
 
   .Cart-products img {
