@@ -49,4 +49,8 @@
   .headertitle h1 a {
     font-weight: 600;
   }
+
+  .description {
+    display: none;
+  }
 }
