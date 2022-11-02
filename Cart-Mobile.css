@@ -26,18 +26,9 @@
     padding-top: 15%;
   }
 
-  .description {
-    display: none;
-  }
-
-  .Cart-products p {
-    font-size: 15px;
-  }
-
   .Cart-products h2 {
     font-weight: 600;
     font-size: 25px;
-    white-space: nowrap;
   }
 
   .Cart-products img {

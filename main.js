@@ -144,10 +144,3 @@ function totalPrice() {
 }
 
 //**totalPrice function Ends**/
-
-//POP-UP VID GENOMFÖRT KÖP. SKA VARA PÅ KUNDVAGNSSIDAN OOOOOBS DENNA ÄR BORTKOMMENDERAD TILLFÄLLIGT FÖR ATT SLIPPA FELMEDDELANDE!!!!!!!!!!!!!!!
-//   const completeYouPurchase = document.querySelector(".completeYouPurchase");
-
-//   completeYouPurchase.addEventListener("click", function () {
-//     alert("Ditt köp är genomfört!");
-//   });

@@ -1,11 +1,6 @@
 /**********Desktop/tablet**********/
-* {
-  margin: 0;
-  padding: 0;
-}
 
 .shoppingtitle {
-  /*background-color: bisque;*/
   display: flex;
   align-items: center;
   color: #212121;
@@ -13,13 +8,8 @@
   font-size: large;
 }
 
-.shoppingtitle h1 {
-  font-weight: bolder;
-  /*Varför funkar de ej*/
-}
-
 .shoppingtitle i {
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin-right: 11px;
 }
 
@@ -35,8 +25,6 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   display: flex;
-  /* background-color: aqua; */
-  flex: 25%;
   gap: 1em;
   padding: 1rem;
 }
