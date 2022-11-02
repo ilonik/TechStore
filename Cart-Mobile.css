@@ -1,6 +1,6 @@
 /**********Header**********/
 /***********cartDispla PHONEy***************/
-@media (min-width: 375px) and (max-width: 440px) {
+@media only screen and (max-width: 440px) {
   #basket-output {
     display: flex;
     flex-wrap: wrap;
@@ -8,6 +8,7 @@
     padding-right: 10%;
     padding-left: 10%;
     padding-bottom: 20%;
+    gap: 10px;
   }
 
   .Cart-products {
@@ -48,5 +49,9 @@
 
   .headertitle h1 a {
     font-weight: 600;
+  }
+
+  .description {
+    display: none;
   }
 }
