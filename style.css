@@ -138,13 +138,6 @@ body {
   padding: 10px;
 }
 
-.products span {
-  font-weight: bolder;
-  padding-bottom: 10px;
-
-  font-size: 13px;
-}
-
 .products p {
   text-align: center;
   font-weight: lighter;

@@ -7,13 +7,7 @@
     padding: 10px;
   }
 
-  .products span {
-    font-weight: bolder;
-    padding-bottom: 10px;
-    font-size: 15px;
-  }
-
-  .products h1 {
+  .products h2 {
     font-weight: bolder;
     font-size: 2.5rem;
   }
@@ -36,13 +30,7 @@
     padding: 10px;
   }
 
-  .products span {
-    font-weight: bolder;
-    padding-bottom: 10px;
-    font-size: 15px;
-  }
-
-  .products h1 {
+  .products h2 {
     font-weight: bolder;
     font-size: 2.5rem;
   }
@@ -73,6 +61,10 @@
   .AllOrderInfo {
     width: 30%;
   }
+
+  .products p {
+    font-weight: bolder;
+  }
 }
 
 @media only screen and (min-width: 1281px) {
@@ -87,6 +79,10 @@
 
   .AllOrderInfo {
     width: 30%;
+  }
+
+  .products p {
+    font-weight: bolder;
   }
 }
 /******DeskTopEnd***********/
