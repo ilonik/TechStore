@@ -1,6 +1,6 @@
 /**********Header**********/
 /***********cartDispla PHONEy***************/
-@media (min-width: 374px) and (max-width: 440px) {
+@media only screen and (max-width: 440px) {
   #basket-output {
     display: flex;
     flex-wrap: wrap;
@@ -22,7 +22,7 @@
     border: 2px solid #5596f4;
     flex: 40%;
     border-radius: 15px;
-    /* margin: 10px; */
+    margin: 10px;
     padding-bottom: 5%;
     padding-top: 15%;
   }
