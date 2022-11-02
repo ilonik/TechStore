@@ -26,21 +26,9 @@
     padding-top: 15%;
   }
 
-  .description {
-    display: none;
-  }
-
-  .Cart-products p {
-    text-align: center;
-    font-weight: 600;
-    padding-top: 1px;
-    font-size: 7px !important;
-  }
-
   .Cart-products h2 {
     font-weight: 600;
-    font-size: 20px;
-    white-space: nowrap;
+    font-size: 25px;
   }
 
   .Cart-products img {
@@ -51,5 +39,13 @@
   .completeYouPurchase {
     display: flex;
     justify-content: center;
+  }
+
+  .totalPrice {
+    font-size: 19px;
+  }
+
+  .headertitle h1 a {
+    font-weight: 600;
   }
 }

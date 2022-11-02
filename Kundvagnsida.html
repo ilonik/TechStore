@@ -1,56 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechStore Kundvagn</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TechStore Kundvagn</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
-  <!--Link to fonts-->
-  <script src="https://kit.fontawesome.com/5a9bbefb56.js" crossorigin="anonymous"></script>
-  <!--link to shopping cart logo-->
-  <script src="./main.js" defer></script>
+    <!--Link to fonts-->
+    <script
+      src="https://kit.fontawesome.com/5a9bbefb56.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--link to shopping cart logo-->
+    <script src="./main.js" defer></script>
 
-  <link rel="stylesheet" href="style.css" />
-  <!--link to style.css-->
-  <link rel="stylesheet" href="Cart-Mobile.css" />
-  <!--link to style.css-->
-  <link rel="stylesheet" href="desktop.css">
-  <!--link to desktop.css-->
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <!--link to style.css-->
+    <link rel="stylesheet" href="Cart-Mobile.css" />
+    <!--link to style.css-->
+    <link rel="stylesheet" href="desktop.css" />
+    <!--link to desktop.css-->
+  </head>
 
+  <body onload="inBasketSite()">
+    <header class="header">
+      <div class="headertitle">
+        <h1><a href="index.html">TechStore</a></h1>
+      </div>
 
-<body onload="inBasketSite()">
+      <div class="shoppingcart">
+        <p class="count"></p>
+        <a href="Kundvagnsida.html"
+          ><i class="fa-solid fa-cart-shopping"></i
+        ></a>
+      </div>
+    </header>
 
-  <header class="header">
-    <div class="headertitle">
-      <h1><a href="index.html">TechStore</a></h1>
-      <!--link to the start site-->
-    </div>
+    <main>
+      <div class="shoppingtitle">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <h1>Kundvagn</h1>
+      </div>
 
-    <div class="shoppingcart">
-      <p class="count"></p>
-      <a href="Kundvagnsida.html"><i class="fa-solid fa-cart-shopping"></i></a>
-      <!--just a shopping cart logo-->
-    </div>
-  </header>
-
-
-  <main>
-
-    <div class="shoppingtitle">
-      <i class="fa-solid fa-cart-shopping"></i>
-      <h1>Kundvagn</h1>
-    </div>
-
-    <div id="basket-output"></div>
-
-    <!-- Add the content of your site here via javascript -->
-    <!--TEst-->
-  </main>
-  <h1 class="totalPrice"></h1>
-</body>
-
+      <div id="basket-output"></div>
+    </main>
+    <h1 class="totalPrice"></h1>
+  </body>
 </html>

@@ -25,7 +25,7 @@
   color: #ffffff;
   border: none;
   border-radius: 12px;
-  font-size: 14px;
+  font-size: 13px;
   cursor: pointer;
 }
 
@@ -54,7 +54,10 @@
 /*slutför ditt köp knapp*/
 
 .totalPrice {
+  padding-top: 5px;
   text-align: center;
+  font-size: 17px;
+  font-weight: 540;
 }
 
 .completeYourPurchaseBtn {
@@ -71,8 +74,6 @@
   border: none;
   border-radius: 7px;
   font-size: 15px;
-  text-align: center;
-
   cursor: pointer;
 }
 
@@ -81,10 +82,7 @@
 a {
   color: #ffffff;
   text-decoration: none;
-}
-
-.headertitle h1 {
-  font-weight: 345;
+  font-weight: 600;
 }
 
 /*header size & color*/
@@ -100,20 +98,22 @@ a {
 
 /*title & links*/
 .headertitle {
-  margin-top: 10px;
-  font-family: "Poppins", sans-serif;
+  align-self: center;
+  margin-left: 10px;
 }
 
 /*shopping cart & link*/
 .shoppingcart {
   color: #ffffff;
   display: flex;
-  font-size: 2rem;
-  margin-top: 13px;
+  font-size: 30px;
+  margin-top: 10px;
+  align-items: center;
 }
 
 .count {
   font-size: 30px;
+  padding-right: 5px;
 }
 
 /**********Header**********/
@@ -140,10 +140,6 @@ body {
 
 .products p {
   text-align: center;
-  font-weight: lighter;
-}
-
-.products span {
   font-weight: bolder;
 }
 
