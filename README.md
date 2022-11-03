@@ -1,5 +1,6 @@
 # TechStore
 https://ilonik.github.io/TechStore/
+https://github.com/ilonik/TechStore.git
 
 Inlämningsuppgift Techstore
 
