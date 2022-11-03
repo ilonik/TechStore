@@ -61,5 +61,6 @@ Ni skall jobba enligt GIT-Flow.
 
 VG-kraven:
 När man bekräftar ett köp skall kundvagnen tömmas.
+Utöka produktlistan med ett urval från årets modeller så det totalt finns 10 stycken telefoner.
 
 // AJSHA CACA,NIKELA STÅHL, AMMAR HASAN.
