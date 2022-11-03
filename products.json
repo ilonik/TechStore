@@ -22,5 +22,41 @@
     "description": "Super nice and beautiful smartphone from LG.",
     "image": "LGV30.png",
     "price": 7495
+  },
+  {
+    "title": "Samsung Galaxy S21",
+    "description": "Super nice and beautiful smartphone from Samsung.",
+    "image": "samsung-galaxy-S21FE.png",
+    "price": 9590
+  },
+  {
+    "title": "Samsung Galaxy S20",
+    "description": "Super nice and beautiful smartphone from Samsung.",
+    "image": "samsung-galaxy-s20.png",
+    "price": 7690
+  },
+  {
+    "title": "Samsung Galaxy A53",
+    "description": "Super nice and beautiful smartphone from Samsung.",
+    "image": "samsung-galaxy-a53.png",
+    "price": 5790
+  },
+  {
+    "title": "Samsung Galaxy S22",
+    "description": "Super nice and beautiful smartphone from Samsung.",
+    "image": "samsung-galaxy-s22.png",
+    "price": 10490
+  },
+  {
+    "title": "Xiaomi Redmi Note 11",
+    "description": "Super nice and beautiful smartphone from Xiaomi.",
+    "image": "xiaomi-redmi-note-11.png",
+    "price": 2690
+  },
+  {
+    "title": "Sony Xperia 1IV",
+    "description": "Super nice and beautiful smartphone from Sony.",
+    "image": "sony-xperia-1-iv.png",
+    "price": 13990
   }
 ]
